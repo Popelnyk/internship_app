@@ -15,6 +15,6 @@ export class MainLayoutComponent implements OnInit{
     if (this.authService.user.email !== null) {
       return this.authService.user.displayName;
     }
-    return "Anonymous";
+    return "Anonymous user";
   }
 }

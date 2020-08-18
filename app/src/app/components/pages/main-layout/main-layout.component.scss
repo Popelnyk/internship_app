@@ -1,12 +1,22 @@
 .container {
   height:100vh;
   display: flex;
+  justify-content: center;
   background-image: url("https://images.wallpaperscraft.ru/image/list_vetka_temnyj_117447_1920x1080.jpg");
 
   .bg {
     width: 100%;
     height: inherit;
     object-fit: cover;
+  }
+
+  .welcome-msg {
+    position: absolute;
+    font-style: normal;
+    font-weight: 500;
+    top: 35%;
+    font-size: 72px;
+    color: #FFFFFF;
   }
 
   .log-out {

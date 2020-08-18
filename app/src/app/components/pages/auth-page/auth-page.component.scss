@@ -14,7 +14,7 @@
     font-style: normal;
     font-weight: 500;
 
-    color: #2A0D68;;
+    color: #193359;;
   }
 
   .auth-menu {
@@ -23,12 +23,23 @@
       font-weight: bold;
       font-size: 48px;
       line-height: 59px;
+      color: #193359;
+
+      @media (max-width: 850px) {
+        font-size: 40px;
+      }
+      @media (max-width: 760px) {
+        color: #CEE0FB;
+      }
     }
 
     .log-in-google {
       top: 300px;
       font-size: 18px;
       line-height: 22px;
+      @media (max-width: 760px) {
+        color: #CEE0FB;
+      }
     }
 
     .log-in-incognito {
@@ -42,14 +53,21 @@
       }
     }
 
-    .google-logo {
-      position: absolute;
-      top: 330px;
-      width: 150px;
-      height: 150px;
-      &:hover {
-        cursor: pointer;
+      .google-logo {
+        position: absolute;
+        top: 350px;
+        width: 100px;
+        height: 100px;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
+
+    @media (max-width: 760px) {
+      float: none;
+      width: 100%;
+      background-image: url("https://images.wallpaperscraft.ru/image/les_tropinka_derevya_118806_1920x1080.jpg");
     }
   }
 
@@ -57,6 +75,10 @@
     width: 75%;
     float: left;
     height:100vh;
+
+    @media (max-width: 320px) {
+      display: none;
+    }
   }
 
   .background {

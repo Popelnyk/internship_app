@@ -35,7 +35,7 @@ export class AuthService {
   SignInWithGoogle() {
     return this.OAuthProvider(new auth.GoogleAuthProvider())
       .then(res => {
-        console.log("Successfully");
+        console.log("Success");
       }).catch(error => {
         console.log(error);
       });
