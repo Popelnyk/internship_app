@@ -10,10 +10,8 @@
   .auth-menu > p {
     align-content: center;
     position: absolute;
-
     font-style: normal;
     font-weight: 500;
-
     color: #193359;;
   }
 
@@ -46,9 +44,9 @@
       top: 450px;
       font-size: 18px;
       line-height: 22px;
-      color: #3431D6;
+      color: #1FABAB;
       &:hover {
-        color: lightseagreen;
+        color: #10D8D8;
         cursor: pointer;
       }
     }
@@ -76,7 +74,7 @@
     float: left;
     height:100vh;
 
-    @media (max-width: 320px) {
+    @media (max-width: 760px) {
       display: none;
     }
   }
