@@ -1,0 +1,26 @@
+.container {
+  height:100vh;
+  display: flex;
+  background-image: url("https://images.wallpaperscraft.ru/image/paporotnik_list_rastenie_zelenyj_119970_1920x1080.jpg");
+
+  .bg {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+  }
+
+  .log-out {
+    margin: 0;
+    position: absolute;
+    left: 92%;
+    top: 5%;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+
+    &:hover {
+      color: linen;
+      cursor: pointer;
+    }
+  }
+}

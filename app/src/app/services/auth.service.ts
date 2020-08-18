@@ -15,7 +15,6 @@ export class AuthService {
     public router: Router,
     public ngZone: NgZone,
     public afAuth: AngularFireAuth,
-    private angularFireAuth: AngularFireAuth,
   ) {
     this.afAuth.authState.subscribe(user => this.user = user);
   }
@@ -40,6 +39,17 @@ export class AuthService {
       }).catch(error => {
         console.log(error);
       });
+  }
+
+  SignInAnonymously() {
+    return this.afAuth.signInAnonymously()
+      .then(res => {
+        this.ngZone.run(() => {
+          this.router.navigate(['main-layout']);
+        });
+      }).catch(error => {
+        window.alert(error);
+      })
   }
 
   SignOut() {

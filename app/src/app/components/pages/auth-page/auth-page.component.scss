@@ -47,12 +47,13 @@
     width: 75%;
     float: left;
     height:100vh;
-    background-color: green;
   }
 
-  .background > img {
-    width: 100%;
-    height: inherit;
-    object-fit: cover;
+  .background {
+    .bg {
+      width: 100%;
+      height: inherit;
+      object-fit: cover;
+    }
   }
 }

@@ -7,7 +7,7 @@ import {AuthService} from "../../../services/auth.service";
   styleUrls: ["./auth-page.component.scss"],
 })
 export class AuthPageComponent implements OnInit{
-  backgroundPhotoUrl: string = "https://images.wallpaperscraft.ru/image/gory_zakat_nebo_gorizont_118121_1920x1080.jpg";
+  backgroundImageUrl: string = "https://images.wallpaperscraft.ru/image/gory_zakat_nebo_gorizont_118121_1920x1080.jpg";
 
   constructor(public authService: AuthService) { }
   ngOnInit() { }
