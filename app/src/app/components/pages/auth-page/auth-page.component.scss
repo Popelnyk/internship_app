@@ -1,0 +1,58 @@
+.container {
+  .auth-menu {
+    width: 25%;
+    float: left;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+  }
+
+  .auth-menu > p {
+    align-content: center;
+    position: absolute;
+
+    font-style: normal;
+    font-weight: 500;
+
+    color: #2A0D68;;
+  }
+
+  .auth-menu {
+    .site-name {
+      top: 230px;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 59px;
+    }
+
+    .log-in-google {
+      top: 429px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    .log-in-incognito {
+      top: 608px;
+      font-size: 18px;
+      line-height: 22px;
+
+      &:hover {
+        color: #3431D6;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .background {
+    width: 75%;
+    float: left;
+    height:100vh;
+    background-color: green;
+  }
+
+  .background > img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+  }
+}
