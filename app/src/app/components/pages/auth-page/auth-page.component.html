@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="auth-menu">
+    <svg width="195" height="196" viewBox="0 0 195 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M45.9123 171.068C105.013 115.662 105.656 -41.5783 142.657 45.1823C72.6156 146.208 185.287 76.6382 179.596 102.73C173.905 128.822 148.14 145.36 122.048 139.669C95.9564 133.978 -57.5651 51.0018 45.9123 171.068Z" fill="url(#paint0_linear)"/>
+      <defs>
+        <linearGradient id="paint0_linear" x1="79.7372" y1="178.446" x2="114.822" y2="17.5916" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#2EB79E"/>
+          <stop offset="1" stop-color="#017458"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <p class="site-name">Auth&Fly</p>
+    <p class="log-in-google">log in with google</p>
+    <img class="google-logo" src="http://pngimg.com/uploads/google/google_PNG19635.png" alt=""  (click)="authService.SignInWithGoogle()">
+    <p class="log-in-incognito" (click)="authService.SignInAnonymously()">or try incognito</p>
+  </div>
+  <div class="background">
+    <img class="bg" [src]="backgroundImageUrl" alt="">
+  </div>
+</div>
