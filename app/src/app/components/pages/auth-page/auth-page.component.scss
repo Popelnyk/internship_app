@@ -19,25 +19,35 @@
 
   .auth-menu {
     .site-name {
-      top: 230px;
+      top: 160px;
       font-weight: bold;
       font-size: 48px;
       line-height: 59px;
     }
 
     .log-in-google {
-      top: 429px;
+      top: 300px;
       font-size: 18px;
       line-height: 22px;
     }
 
     .log-in-incognito {
-      top: 608px;
+      top: 450px;
       font-size: 18px;
       line-height: 22px;
-
+      color: #3431D6;
       &:hover {
-        color: #3431D6;
+        color: lightseagreen;
+        cursor: pointer;
+      }
+    }
+
+    .google-logo {
+      position: absolute;
+      top: 330px;
+      width: 150px;
+      height: 150px;
+      &:hover {
         cursor: pointer;
       }
     }
