@@ -11,6 +11,8 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
 import { environment } from "../environments/environment.prod";
 import { AuthService } from "./services/auth.service";
 
+//import { DeviceDetectorModule } from "ngx-device-detector";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import { AuthService } from "./services/auth.service";
     BrowserModule,
     AppRoutingModule,
     AngularFireAuthModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    //DeviceDetectorModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
