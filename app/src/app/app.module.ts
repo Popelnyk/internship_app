@@ -10,6 +10,7 @@ import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { environment } from "../environments/environment.prod";
 import { AuthService } from "./services/auth.service";
+import { AngularFireAnalyticsModule } from "@angular/fire/analytics";
 
 //import { DeviceDetectorModule } from "ngx-device-detector";
 
@@ -24,7 +25,7 @@ import { AuthService } from "./services/auth.service";
     AppRoutingModule,
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebase),
-    //DeviceDetectorModule,
+    AngularFireAnalyticsModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
