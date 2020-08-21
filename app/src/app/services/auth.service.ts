@@ -20,21 +20,29 @@ export class AuthService {
 
   //FireBase sign-in with popup
   OAuthProvider(provider: auth.AuthProvider) {
-    return this.afAuth.signInWithPopup(provider)
-      .then(res => {
-        this.ngZone.run(() => {
-          this.router.navigate(['main-layout']);
+    /*
+    if (!(<any>window).cordova) {
+      return this.afAuth.signInWithPopup(provider)
+        .then(res => {
+          this.ngZone.run(() => {
+            this.router.navigate(['main-layout']);
+          });
+        }).catch(error => {
+          window.alert(error);
         });
-      }).catch(error => {
-         window.alert(error);
-      });
+    } else {
+     */
+      return this.afAuth.signInWithRedirect(provider);
+    //}
   }
 
   //FireBase Google sign-in
   SignInWithGoogle() {
+    //this.afAuth.signInWithRedirect(new auth.GoogleAuthProvider());
     return this.OAuthProvider(new auth.GoogleAuthProvider())
       .then(res => {
         console.log("Success");
+        this.router.navigate(['main-layout']);
       }).catch(error => {
         console.log(error);
       });
