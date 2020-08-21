@@ -20,6 +20,7 @@ export class AuthService {
 
   //FireBase sign-in with popup
   OAuthProvider(provider: auth.AuthProvider) {
+    //pop up version
     /*
     if (!(<any>window).cordova) {
       return this.afAuth.signInWithPopup(provider)
@@ -31,21 +32,31 @@ export class AuthService {
           window.alert(error);
         });
     } else {
+    }
      */
-      return this.afAuth.signInWithRedirect(provider);
-    //}
+    return this.afAuth.signInWithRedirect(provider);
   }
 
   //FireBase Google sign-in
   SignInWithGoogle() {
-    //this.afAuth.signInWithRedirect(new auth.GoogleAuthProvider());
+    return this.OAuthProvider(new auth.GoogleAuthProvider());
+
+    //pop-up version
+    /*
     return this.OAuthProvider(new auth.GoogleAuthProvider())
       .then(res => {
         console.log("Success");
-        this.router.navigate(['main-layout']);
       }).catch(error => {
         console.log(error);
       });
+     */
+  }
+
+  async updateUser() {
+    const result = <any> await this.afAuth.getRedirectResult();
+    if (result.user) {
+      this.router.navigate(['main-layout']);
+    }
   }
 
   SignInAnonymously() {

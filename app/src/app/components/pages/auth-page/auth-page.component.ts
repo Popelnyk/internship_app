@@ -11,13 +11,18 @@ export class AuthPageComponent implements OnInit{
 
   constructor(public authService: AuthService) { }
 
-  async ngOnInit() {
+  ngOnInit() {
+    this.authService.updateUser();
+
+    //async version
     /*
     const result = <any> await this.authService.afAuth.getRedirectResult();
     if (result.user) {
       this.authService.router.navigate(['main-layout']);
     }
     */
+
+    //promise version
     /*
     await this.authService.afAuth.getRedirectResult().then( result => {
       console.log(result.user);
