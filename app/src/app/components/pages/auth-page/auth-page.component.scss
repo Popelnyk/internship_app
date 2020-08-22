@@ -35,6 +35,7 @@
       top: 300px;
       font-size: 18px;
       line-height: 22px;
+
       @media (max-width: 760px) {
         color: #CEE0FB;
       }
@@ -45,6 +46,7 @@
       font-size: 18px;
       line-height: 22px;
       color: #1FABAB;
+
       &:hover {
         color: #10D8D8;
         cursor: pointer;

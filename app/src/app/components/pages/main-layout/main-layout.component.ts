@@ -12,7 +12,7 @@ export class MainLayoutComponent implements OnInit{
   ngOnInit() { }
 
   getName(): string {
-    if (this.authService.user.email !== null) {
+    if (this.authService.user.email) {
       return this.authService.user.displayName;
     }
     return "Anonymous user";
