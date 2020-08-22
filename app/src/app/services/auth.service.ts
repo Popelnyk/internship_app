@@ -18,9 +18,8 @@ export class AuthService {
     this.afAuth.authState.subscribe(user => this.user = user);
   }
 
-  //FireBase sign-in with popup/redirect
+  //FireBase sign-in with pop up web version and redirect for mobile
   OAuthProvider(provider: auth.AuthProvider) {
-    //pop up web version
     if (!(<any>window)._cordovaNative) {
       return this.afAuth.signInWithPopup(provider)
         .then(res => {
@@ -31,7 +30,6 @@ export class AuthService {
           window.alert(error);
         });
     } else {
-      //redirect mobile version
       return this.afAuth.signInWithRedirect(provider);
     }
   }

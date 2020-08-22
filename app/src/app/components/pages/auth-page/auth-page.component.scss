@@ -41,15 +41,22 @@
       }
     }
 
-    .log-in-incognito {
-      top: 450px;
+    .btn-sign-in-anonymously {
+      position: absolute;
+      top: 455px;
       font-size: 18px;
-      line-height: 22px;
       color: #1FABAB;
+      border: 2px solid #1FABAB;
+      border-radius: 7px;
+      background: transparent;
+      padding: 8px;
+      outline: none;
 
       &:hover {
         color: #10D8D8;
+        border-color: #10D8D8;
         cursor: pointer;
+        background: linear-gradient(180deg, rgba(250, 255, 254, 0.14) -128.57%, rgba(85, 205, 169, 0.16) 327.66%);;
       }
     }
 
