@@ -1,6 +1,6 @@
 import { Injectable, NgZone } from "@angular/core";
 import { auth } from "firebase/app";
-import { User } from "./user";
+import { User } from "../interfaces/user";
 import { Router } from "@angular/router";
 import { AngularFireAuth } from "@angular/fire/auth";
 
@@ -18,11 +18,10 @@ export class AuthService {
     this.afAuth.authState.subscribe(user => this.user = user);
   }
 
-  //FireBase sign-in with popup
+  //FireBase sign-in with popup/redirect
   OAuthProvider(provider: auth.AuthProvider) {
-    //pop up version
-    /*
-    if (!(<any>window).cordova) {
+    //pop up web version
+    if (!(<any>window)._cordovaNative) {
       return this.afAuth.signInWithPopup(provider)
         .then(res => {
           this.ngZone.run(() => {
@@ -32,24 +31,14 @@ export class AuthService {
           window.alert(error);
         });
     } else {
+      //redirect mobile version
+      return this.afAuth.signInWithRedirect(provider);
     }
-     */
-    return this.afAuth.signInWithRedirect(provider);
   }
 
   //FireBase Google sign-in
   SignInWithGoogle() {
-    return this.OAuthProvider(new auth.GoogleAuthProvider());
-
-    //pop-up version
-    /*
-    return this.OAuthProvider(new auth.GoogleAuthProvider())
-      .then(res => {
-        console.log("Success");
-      }).catch(error => {
-        console.log(error);
-      });
-     */
+    return this.OAuthProvider(new auth.GoogleAuthProvider()).catch(error => console.log(error));
   }
 
   async updateUser() {

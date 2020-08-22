@@ -11,7 +11,7 @@
     </svg>
     <p class="site-name">Auth&Fly</p>
     <p class="log-in-google">log in with google</p>
-    <img class="google-logo" src="http://pngimg.com/uploads/google/google_PNG19635.png" alt="google logo"  (click)="authService.SignInWithGoogle()">
+    <img class="google-logo" [src]="googleLogoUrl" alt="google logo"  (click)="authService.SignInWithGoogle()">
     <p class="log-in-incognito" (click)="authService.SignInAnonymously()">or try incognito</p>
   </div>
   <div class="background">

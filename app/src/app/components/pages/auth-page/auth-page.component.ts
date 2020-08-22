@@ -1,4 +1,4 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, getPlatform, OnInit} from "@angular/core";
 import {AuthService} from "../../../services/auth.service";
 
 @Component({
@@ -8,31 +8,13 @@ import {AuthService} from "../../../services/auth.service";
 })
 export class AuthPageComponent implements OnInit{
   backgroundImageUrl: string = "https://images.wallpaperscraft.ru/image/les_tropinka_derevya_118806_1920x1080.jpg";
+  googleLogoUrl: string = "https://img.icons8.com/clouds/200/000000/google-logo.png";
 
   constructor(public authService: AuthService) { }
 
   ngOnInit() {
-    this.authService.updateUser();
-
-    //async version
-    /*
-    const result = <any> await this.authService.afAuth.getRedirectResult();
-    if (result.user) {
-      this.authService.router.navigate(['main-layout']);
+    if ((<any>window)._cordovaNative) {
+      this.authService.updateUser();
     }
-    */
-
-    //promise version
-    /*
-    await this.authService.afAuth.getRedirectResult().then( result => {
-      console.log(result.user);
-      let user = result.user;
-      if (user) {
-        this.authService.router.navigate(['main-layout']);
-      }
-    }).catch(function(error) {
-      window.alert(error.message);
-    });
-     */
   }
 }
