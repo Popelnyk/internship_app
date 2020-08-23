@@ -1,4 +1,4 @@
 <div class="container">
-  <p class="log-out" (click)="authService.SignOut()">sign out</p>
+  <button class="log-out" (click)="authService.SignOut()">sign out</button>
   <p class="welcome-msg" *ngIf="authService.user">Welcome, {{ getName() }}</p>
 </div>

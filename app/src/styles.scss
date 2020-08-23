@@ -6,4 +6,18 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: 'Alata', sans-serif;
+
+  button {
+    color: #1FABAB;
+    border: 2px solid #1FABAB;
+    border-radius: 6px;
+    background: transparent;
+    padding: 8px;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+      background: linear-gradient(180deg, rgba(250, 255, 254, 0.14) -128.57%, rgba(85, 205, 169, 0.16) 327.66%);
+    }
+  }
 }
