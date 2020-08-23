@@ -41,16 +41,12 @@
       }
     }
 
-    .log-in-incognito {
-      top: 450px;
+    .btn-sign-in-anonymously {
+      position: absolute;
+      height: 55px;
+      width: 160px;
+      top: 470px;
       font-size: 18px;
-      line-height: 22px;
-      color: #1FABAB;
-
-      &:hover {
-        color: #10D8D8;
-        cursor: pointer;
-      }
     }
 
       .google-logo {
