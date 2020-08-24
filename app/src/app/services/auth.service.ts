@@ -3,6 +3,7 @@ import { auth } from "firebase/app";
 import { User } from "../interfaces/user";
 import { Router } from "@angular/router";
 import { AngularFireAuth } from "@angular/fire/auth";
+import {CordovaService} from "./cordova.service";
 
 @Injectable({
   providedIn: "root"
@@ -14,13 +15,14 @@ export class AuthService {
     public router: Router,
     public ngZone: NgZone,
     public afAuth: AngularFireAuth,
+    public cordovaService: CordovaService,
   ) {
     this.afAuth.authState.subscribe(user => this.user = user);
   }
 
   //FireBase sign-in with pop up web version and redirect for mobile
   OAuthProvider(provider: auth.AuthProvider) {
-    if (!(<any>window)._cordovaNative) {
+    if (!this.cordovaService.onCordova) {
       return this.afAuth.signInWithPopup(provider)
         .then(res => {
           this.ngZone.run(() => {
