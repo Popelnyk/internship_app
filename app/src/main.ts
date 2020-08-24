@@ -15,4 +15,4 @@ let onDeviceReady = () => {
   platformBrowserDynamic().bootstrapModule(AppModule);
 };
 
-//document.addEventListener('deviceready', onDeviceReady, false);
+document.addEventListener('deviceready', onDeviceReady, false);
