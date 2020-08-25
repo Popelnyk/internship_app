@@ -1,5 +1,6 @@
 import {Component, OnInit} from "@angular/core";
 import {AuthService} from "../../../services/auth.service";
+import {CordovaService} from "../../../services/cordova.service";
 
 @Component({
   selector: "app-main-layout",
@@ -7,9 +8,11 @@ import {AuthService} from "../../../services/auth.service";
   styleUrls: ["./main-layout.component.scss"],
 })
 export class MainLayoutComponent implements OnInit{
-  constructor(public authService: AuthService) { }
+  constructor(public authService: AuthService, public cordovaService: CordovaService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.cordovaService.notify();
+  }
 
   getName(): string {
     if (this.authService.user.email) {

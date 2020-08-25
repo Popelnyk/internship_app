@@ -11,6 +11,7 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
 import { environment } from "../environments/environment.prod";
 import { AuthService } from "./services/auth.service";
 import { AngularFireAnalyticsModule } from "@angular/fire/analytics";
+import {CordovaService} from "./services/cordova.service";
 
 //import { DeviceDetectorModule } from "ngx-device-detector";
 
@@ -27,7 +28,7 @@ import { AngularFireAnalyticsModule } from "@angular/fire/analytics";
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAnalyticsModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, CordovaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
