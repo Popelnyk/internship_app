@@ -10,9 +10,7 @@ import {CordovaService} from "../../../services/cordova.service";
 export class MainLayoutComponent implements OnInit{
   constructor(public authService: AuthService, public cordovaService: CordovaService) { }
 
-  ngOnInit() {
-    this.cordovaService.notify();
-  }
+  ngOnInit() { }
 
   getName(): string {
     if (this.authService.user.email) {

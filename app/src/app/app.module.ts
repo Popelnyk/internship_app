@@ -12,6 +12,7 @@ import { environment } from "../environments/environment.prod";
 import { AuthService } from "./services/auth.service";
 import { AngularFireAnalyticsModule } from "@angular/fire/analytics";
 import {CordovaService} from "./services/cordova.service";
+import {ListEventsComponent} from "./components/lists/list-events/list-events.component";
 
 //import { DeviceDetectorModule } from "ngx-device-detector";
 
@@ -20,6 +21,7 @@ import {CordovaService} from "./services/cordova.service";
     AppComponent,
     AuthPageComponent,
     MainLayoutComponent,
+    ListEventsComponent,
   ],
   imports: [
     BrowserModule,
