@@ -27,10 +27,21 @@ export class CordovaService {
   get cordova(): any {
     return _window().cordova;
   }
+
   get onCordova(): Boolean {
     return !!_window().cordova;
   }
+
   public onResume(): void {
     this.resume.next(true);
+  }
+
+  public notify(): void {
+    _window().navigator.notification.confirm(
+      'You are the winner!',
+      ( ) => { },
+      'Game Over',
+      ['Restart','Exit']
+    );
   }
 }
