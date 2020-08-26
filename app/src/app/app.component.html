@@ -1,1 +1,4 @@
-<router-outlet></router-outlet>
+<div class="shiftNavigation">
+  <app-create-event-modal [data]="modalsService.openedModals[modalsService.modals.CREATE_EVENT_MODAL].data" *ngIf="modalsService.openedModals[modalsService.modals.CREATE_EVENT_MODAL].isOpen" (cbClose)="closeModal(modalsService.modals.CREATE_EVENT_MODAL)"></app-create-event-modal>
+  <router-outlet></router-outlet>
+</div>

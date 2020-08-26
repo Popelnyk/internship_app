@@ -3,7 +3,7 @@
     <h3>Name</h3>
     <h3>Description</h3>
     <h3>Date</h3>
-    <button class="add">+</button>
+    <button class="add" (click)="onCreateEvent()">+</button>
   </div>
   <div class="events-container">
     <div class="event" *ngFor="let item of testEventsList">

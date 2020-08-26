@@ -13,6 +13,9 @@ import { AuthService } from "./services/auth.service";
 import { AngularFireAnalyticsModule } from "@angular/fire/analytics";
 import {CordovaService} from "./services/cordova.service";
 import {ListEventsComponent} from "./components/lists/list-events/list-events.component";
+import {CreateEventModalComponent} from "./components/modals/create-event-modal/create-event-modal.component";
+import {ModalsService} from "./services/modal.service";
+import {ModalComponent} from "./ui/Modal/modal.component";
 
 //import { DeviceDetectorModule } from "ngx-device-detector";
 
@@ -22,6 +25,8 @@ import {ListEventsComponent} from "./components/lists/list-events/list-events.co
     AuthPageComponent,
     MainLayoutComponent,
     ListEventsComponent,
+    CreateEventModalComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,7 @@ import {ListEventsComponent} from "./components/lists/list-events/list-events.co
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAnalyticsModule,
   ],
-  providers: [AuthService, CordovaService],
+  providers: [AuthService, CordovaService, ModalsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
