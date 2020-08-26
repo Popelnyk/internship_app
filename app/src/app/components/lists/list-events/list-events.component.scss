@@ -1,9 +1,8 @@
 .container {
-  position: absolute;
+  position: relative;
   width: 1068px;
   height: 800px;
-  top: 132px;
-  right: 420px;
+  top: 130px;
   background: rgba(248, 248, 248, 0.1);
   border-radius: 3px;
 
@@ -20,18 +19,18 @@
     }
 
     h3:nth-child(2) {
-      left: 47%;
+      left: 46%;
     }
 
     h3:nth-child(3) {
-      left: 87%;
+      left: 86%;
     }
 
     .add {
       position: absolute;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 24px;
-      right: 2%;
+      right: 35px;
       height: 33px;
       width: 33px;
       padding: 0;
@@ -48,6 +47,48 @@
 
   .events-container {
     width: inherit;
-    height: 832px;
+    height: 720px;
+    justify-content: center;
+
+    .event > p {
+      position: absolute;
+      text-align: center;
+    }
+
+    .event {
+      position: relative;
+      width: 1028px;
+      height: 51px;
+      background: #4B9180;
+      border-radius: 3px;
+      margin-top: 17px;
+      margin-left: 20px;
+      display: flex;
+      justify-content: center;
+
+      p:nth-child(1) {
+        left: 5%;
+      }
+
+      p:nth-child(3) {
+        left: 85%;
+      }
+
+      .delete {
+        justify-content: center;
+        position: absolute;
+        right: 16px;
+        top: 8px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 25px;
+        height: 33px;
+        width: 33px;
+        color: #EA7676;
+        border-color: #EA7676;
+        padding: 0;
+        display: flex;
+      }
+    }
   }
 }

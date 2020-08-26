@@ -6,6 +6,11 @@
     <button class="add">+</button>
   </div>
   <div class="events-container">
-
+    <div class="event" *ngFor="let item of testEventsList">
+      <p class="name">{{ item.name }}</p>
+      <p class="description">{{ item.description }}</p>
+      <p class="date">{{ item.date }}</p>
+      <button class="delete">-</button>
+    </div>
   </div>
 </div>
