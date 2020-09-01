@@ -1,7 +1,23 @@
 <modal>
   <div class="modal">
-    <span (click)="cbClose.emit()" class="closeIcon">
-      <img alt="close" src="https://i.ya-webdesign.com/images/close-icon-png-3.png">
-    </span>
+    <div class="header">
+      <h3 class="modal-name">Add event!</h3>
+      <button class="close" (click)="cbClose.emit()">-</button>
+    </div>
+    <form class="form">
+      <div class="input-title">
+        <div class="head">
+          <span>Event's title</span>
+        </div>
+        <input ngModel name="title">
+      </div>
+      <div class="input-description">
+        <div class="head">
+          <span>Event's description</span>
+        </div>
+        <input ngModel name="title">
+      </div>
+      <button>Post</button>
+    </form>
   </div>
 </modal>
