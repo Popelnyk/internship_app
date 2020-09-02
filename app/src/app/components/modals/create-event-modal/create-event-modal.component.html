@@ -4,15 +4,15 @@
       <h3 class="modal-name">Add event!</h3>
       <button class="close" (click)="cbClose.emit()">-</button>
     </div>
-    <form class="form">
+    <form class="form" #form="ngForm" (ngSubmit)="onSubmit(form)">
       <div class="input-title">
-        <input ngModel maxlength="35" name="title" placeholder="Name your event...">
+        <input ngModel name="title" maxlength="35" placeholder="Name your event...">
       </div>
       <div class="input-description">
-        <textarea maxlength="170" name="description" placeholder="Describe your event here..."></textarea>
+        <textarea ngModel name="description" maxlength="170" name="description" placeholder="Describe your event here..."></textarea>
       </div>
       <div class="input-time">
-        <input type="datetime-local">
+        <input ngModel name="date" type="datetime-local">
       </div>
       <button class="btn-add-event">Add</button>
     </form>

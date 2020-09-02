@@ -15,7 +15,8 @@ export class CreateEventModalComponent {
   @Output() cbClose: EventEmitter<void> = new EventEmitter<void>();
   @Input() data;
 
-  async onSubmit() {
+  async onSubmit({form: {value: values}}) {
+    console.log(values);
     this.cbClose.emit();
   }
 

@@ -22,7 +22,7 @@
     <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="event-add-modal upd styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/modals/create-event-modal/create-event-modal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/modals/create-event-modal/create-event-modal.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/modals/create-event-modal/create-event-modal.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/modals/create-event-modal/create-event-modal.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/modals/create-event-modal/create-event-modal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/modals/create-event-modal/create-event-modal.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
       <workItem from="1598993338661" duration="1248000" />
       <workItem from="1598998078816" duration="267000" />
       <workItem from="1598998364735" duration="470000" />
-      <workItem from="1599041400507" duration="14001000" />
+      <workItem from="1599041400507" duration="14982000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1598998789345</created>
@@ -89,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599080314014</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="event-add-modal upd styles">
+      <created>1599081954285</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599081954285</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
