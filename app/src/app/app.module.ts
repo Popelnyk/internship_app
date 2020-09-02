@@ -37,7 +37,11 @@ import {FormsModule} from "@angular/forms";
         AngularFireAnalyticsModule,
         FormsModule,
     ],
-  providers: [AuthService, CordovaService, ModalsService],
+  providers: [
+    AuthService,
+    CordovaService,
+    ModalsService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

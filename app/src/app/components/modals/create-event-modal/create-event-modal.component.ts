@@ -18,4 +18,5 @@ export class CreateEventModalComponent {
   async onSubmit() {
     this.cbClose.emit();
   }
+
 }
