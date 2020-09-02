@@ -10,8 +10,7 @@ export const CREATE_EVENT_MODAL = 'CREATE_EVENT_MODAL';
 })
 export class CreateEventModalComponent {
 
-  constructor(public modalsService: ModalsService) {
-  }
+  constructor(public modalsService: ModalsService) { }
 
   @Output() cbClose: EventEmitter<void> = new EventEmitter<void>();
   @Input() data;
