@@ -11,6 +11,7 @@ export class EventsService {
   constructor(private db: AngularFirestore, private authService: AuthService) {
     this.events = db.collection(firestoreConfig.users_endpoint).doc(this.authService.user.uid)
                     .collection(firestoreConfig.events_endpoint);
+    console.log(this.events);
   }
 
   addEvent(event) {
