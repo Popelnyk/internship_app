@@ -17,6 +17,7 @@ import {CreateEventModalComponent} from "./components/modals/create-event-modal/
 import {ModalsService} from "./services/modal.service";
 import {ModalComponent} from "./ui/Modal/modal.component";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {EventsService} from "./services/events.service";
 
 //import { DeviceDetectorModule } from "ngx-device-detector";
 
@@ -42,6 +43,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     AuthService,
     CordovaService,
     ModalsService,
+    EventsService,
   ],
   bootstrap: [AppComponent]
 })

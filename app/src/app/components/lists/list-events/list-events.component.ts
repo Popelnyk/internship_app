@@ -1,5 +1,9 @@
 import {Component, OnInit} from "@angular/core";
 import {ModalsService} from "../../../services/modal.service";
+import {Observable} from "rxjs";
+import {AngularFirestore} from "@angular/fire/firestore";
+import {EventsService} from "../../../services/events.service";
+import {firestoreConfig} from "../../../../firestoreConfig";
 
 @Component({
   selector: "app-list-events",

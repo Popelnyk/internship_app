@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {ModalsService} from "../../../services/modal.service";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {formatDate} from "@angular/common";
+import {Observable} from "rxjs";
 
 export const CREATE_EVENT_MODAL = 'CREATE_EVENT_MODAL';
 
