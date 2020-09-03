@@ -5,7 +5,8 @@ import { Router } from "@angular/router";
 import { AngularFireAuth } from "@angular/fire/auth";
 import { CordovaService } from "./cordova.service";
 import { AngularFirestore } from "@angular/fire/firestore";
-import { firestoreConfig } from "../../firestoreConfig";
+import {firestoreConfig} from "../../firestoreConfig";
+
 
 @Injectable({
   providedIn: "root"
@@ -20,7 +21,14 @@ export class AuthService {
     public cordovaService: CordovaService,
     public db: AngularFirestore,
   ) {
-    this.afAuth.authState.subscribe(user => this.user = user);
+    this.afAuth.authState.subscribe(user => {
+      this.user = user;
+      if (this.user) {
+        this.db.collection<User>(firestoreConfig.users_endpoint).doc(this.user.displayName).set(this.user)
+          .then(id => console.log(id))
+          .catch(err => console.log(err));
+      }
+    });
   }
 
   //FireBase sign-in with pop up web version and redirect for mobile
@@ -28,19 +36,9 @@ export class AuthService {
     if (!this.cordovaService.onCordova) {
       return this.afAuth.signInWithPopup(provider)
         .then(res => {
-
-          console.log(this.user);
-
-          this.db.collection<any>(firestoreConfig.users_endpoint).doc("xxx").set({
-            name: "Toe8o",
-            eMail: "ic@e0e.com",
-          }).then(id => console.log(id))
-            .catch(err => console.log(err));
-
           this.ngZone.run(() => {
             this.router.navigate(['main-layout']);
           });
-
         }).catch(error => {
           window.alert(error);
         });
