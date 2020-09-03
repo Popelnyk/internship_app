@@ -6,7 +6,7 @@
     <button class="add" (click)="onCreateEvent()">+</button>
   </div>
   <div class="events-container">
-    <div class="event" *ngFor="let item of testEventsList">
+    <div class="event" *ngFor="let item of events | async">
       <p class="name">{{ item.name }}</p>
       <p class="description">{{ item.description }}</p>
       <p class="date">{{ item.date }}</p>

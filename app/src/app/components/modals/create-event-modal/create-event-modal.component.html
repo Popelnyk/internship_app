@@ -6,13 +6,13 @@
     </div>
     <form class="form" [formGroup]="eventForm" #form="ngForm" (ngSubmit)="onSubmit(form)">
       <div class="input-title">
-        <input ngModel formControlName="EventTitle" name="title" required minlength="3" maxlength="35" placeholder="Name your event...">
+        <input formControlName="EventTitle" name="title" required minlength="3" maxlength="35" placeholder="Name your event...">
       </div>
       <div class="input-description">
-        <textarea ngModel formControlName="EventDescription" name="description" maxlength="170" placeholder="Describe your event here..."></textarea>
+        <textarea formControlName="EventDescription" name="description" maxlength="170" placeholder="Describe your event here..."></textarea>
       </div>
       <div class="input-time">
-        <input ngModel formControlName="EventDate" name="date" type="datetime-local" min="{{ currentTime | date:'YYYY-MM-DD' }}">
+        <input formControlName="EventDate" name="date" type="datetime-local" min="{{ currentTime | date:'YYYY-MM-DD' }}">
       </div>
       <button class="btn-add-event" [disabled]="eventForm.invalid">Add</button>
     </form>

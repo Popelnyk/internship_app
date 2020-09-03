@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {ModalsService} from "../../../services/modal.service";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Observable} from "rxjs";
+import {EventsService} from "../../../services/events.service";
 
 export const CREATE_EVENT_MODAL = 'CREATE_EVENT_MODAL';
 
@@ -18,7 +19,7 @@ export class CreateEventModalComponent implements OnInit{
   eventForm: FormGroup | null = null;
   currentTime: number = Date.now();
 
-  constructor(public modalsService: ModalsService) { }
+  constructor(public modalsService: ModalsService, public eventsService: EventsService) { }
 
   ngOnInit() {
     this.eventForm = new FormGroup({
@@ -40,6 +41,7 @@ export class CreateEventModalComponent implements OnInit{
 
   async onSubmit({form: {value: values}}) {
     console.log(values);
+    this.eventsService.addEvent(values);
     this.cbClose.emit();
   }
 }

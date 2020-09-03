@@ -1,13 +1,16 @@
 import { Injectable } from "@angular/core";
-import { AngularFirestoreDocument, AngularFirestore, AngularFirestoreCollection } from "angularfire2/firestore";
+import { AngularFirestore } from "@angular/fire/firestore";
 import { firestoreConfig } from "../../firestoreConfig";
+import { ListEvent } from "../interfaces/listEvent";
+import { AuthService } from "./auth.service";
 
 @Injectable()
 export class EventsService {
-  events: AngularFirestoreCollection<Event>;
+  events = null;
 
-  constructor(private db: AngularFirestore) {
-    this.events = db.collection(firestoreConfig.events_endpoint);
+  constructor(private db: AngularFirestore, private authService: AuthService) {
+    this.events = db.collection(firestoreConfig.users_endpoint).doc(this.authService.user.uid)
+                    .collection(firestoreConfig.events_endpoint);
   }
 
   addEvent(event) {
