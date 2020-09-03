@@ -7,9 +7,9 @@
   </div>
   <div class="events-container">
     <div class="event" *ngFor="let item of events | async">
-      <p class="name">{{ item.name }}</p>
-      <p class="description">{{ item.description }}</p>
-      <p class="date">{{ item.date }}</p>
+      <p class="name">{{ item.EventTitle }}</p>
+      <p class="description">{{ item.EventDescription }}</p>
+      <p class="date">{{ item.EventDate }}</p>
       <button class="delete">-</button>
     </div>
   </div>
