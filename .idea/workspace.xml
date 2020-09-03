@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="fix">
-      <change beforePath="$PROJECT_DIR$/app/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/services/auth.service.ts" afterDir="false" />
-    </list>
+    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +62,7 @@
       <workItem from="1598993338661" duration="1248000" />
       <workItem from="1598998078816" duration="267000" />
       <workItem from="1598998364735" duration="470000" />
-      <workItem from="1599041400507" duration="40459000" />
+      <workItem from="1599041400507" duration="41242000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1598998789345</created>
@@ -136,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599166591371</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix">
+      <created>1599166908278</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1599166908278</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
