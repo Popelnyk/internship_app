@@ -11,15 +11,14 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
 import { environment } from "../environments/environment.prod";
 import { AuthService } from "./services/auth.service";
 import { AngularFireAnalyticsModule } from "@angular/fire/analytics";
-import {CordovaService} from "./services/cordova.service";
-import {ListEventsComponent} from "./components/lists/list-events/list-events.component";
-import {CreateEventModalComponent} from "./components/modals/create-event-modal/create-event-modal.component";
-import {ModalsService} from "./services/modal.service";
-import {ModalComponent} from "./ui/Modal/modal.component";
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {EventsService} from "./services/events.service";
-
-//import { DeviceDetectorModule } from "ngx-device-detector";
+import { CordovaService } from "./services/cordova.service";
+import { ListEventsComponent } from "./components/lists/list-events/list-events.component";
+import { CreateEventModalComponent } from "./components/modals/create-event-modal/create-event-modal.component";
+import { ModalsService } from "./services/modal.service";
+import { ModalComponent } from "./ui/Modal/modal.component";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { EventsService } from "./services/events.service";
+import { AngularFirestoreModule, AngularFirestore, SETTINGS } from "@angular/fire/firestore";
 
 @NgModule({
   declarations: [
@@ -38,12 +37,14 @@ import {EventsService} from "./services/events.service";
     AngularFireAnalyticsModule,
     FormsModule,
     ReactiveFormsModule,
+    AngularFirestoreModule,
   ],
   providers: [
     AuthService,
     CordovaService,
     ModalsService,
     EventsService,
+    AngularFirestore,
   ],
   bootstrap: [AppComponent]
 })
