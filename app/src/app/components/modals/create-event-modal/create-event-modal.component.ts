@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {ModalsService} from "../../../services/modal.service";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {formatDate} from "@angular/common";
 
 export const CREATE_EVENT_MODAL = 'CREATE_EVENT_MODAL';
 
@@ -15,6 +16,7 @@ export class CreateEventModalComponent implements OnInit{
   @Input() data;
 
   eventForm: FormGroup | null = null;
+  currentTime: number = Date.now();
 
   constructor(public modalsService: ModalsService) { }
 

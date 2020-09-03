@@ -12,7 +12,7 @@
         <textarea ngModel formControlName="EventDescription" name="description" maxlength="170" placeholder="Describe your event here..."></textarea>
       </div>
       <div class="input-time">
-        <input ngModel formControlName="EventDate" name="date" type="datetime-local">
+        <input ngModel formControlName="EventDate" name="date" type="datetime-local" min="{{ currentTime | date:'YYYY-MM-DD' }}">
       </div>
       <button class="btn-add-event" [disabled]="eventForm.invalid">Add</button>
     </form>
