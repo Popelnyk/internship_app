@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="upd styles of event item">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="init">
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +64,7 @@
       <workItem from="1598993338661" duration="1248000" />
       <workItem from="1598998078816" duration="267000" />
       <workItem from="1598998364735" duration="470000" />
-      <workItem from="1599041400507" duration="60266000" />
+      <workItem from="1599041400507" duration="60584000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1598998789345</created>
@@ -192,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599226257592</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="init">
+      <created>1599232755573</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1599232755573</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +218,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init" />
     <MESSAGE value="event add modal upd styles" />
     <MESSAGE value="event-add-modal upd styles" />
     <MESSAGE value="getting form values in create-event-modal.component.ts&#10;added ngModel to obtain values from form in create-event-modal.component.html" />
@@ -224,7 +230,8 @@
     <MESSAGE value="fix" />
     <MESSAGE value="fixed: event list now works for different persons" />
     <MESSAGE value="upd styles of event item" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd styles of event item" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="WindowStateProjectService">
     <state x="827" y="435" key="#TSLint" timestamp="1599066601084">
