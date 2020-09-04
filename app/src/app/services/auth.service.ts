@@ -24,7 +24,7 @@ export class AuthService {
   ) {
     this.afAuth.authState.subscribe(user => {
       this.user = user;
-      if (this.user) {
+      if (this.user && (this.user.email || this.user.displayName)) {
         this.db.collection<User>(firestoreConfig.users_endpoint).doc(user.uid).set({
           name: this.user.displayName,
           email: this.user.email,

@@ -50,10 +50,10 @@
     height: 720px;
     justify-content: center;
 
-    .event > p {
-      position: absolute;
-      text-align: center;
-      color: #FFFFFF;
+    .event > div {
+      height: inherit;
+      position: relative;
+      width: 30%;
     }
 
     .event {
@@ -65,15 +65,8 @@
       margin-top: 17px;
       margin-left: 20px;
       display: flex;
+      align-items: center;
       justify-content: center;
-
-      p:nth-child(1) {
-        left: 5%;
-      }
-
-      p:nth-child(3) {
-        left: 85%;
-      }
 
       .delete {
         justify-content: center;
@@ -89,6 +82,12 @@
         border-color: #EA7676;
         padding: 0;
         display: flex;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
