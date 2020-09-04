@@ -19,6 +19,7 @@ import { ModalComponent } from "./ui/Modal/modal.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { EventsService } from "./services/events.service";
 import { AngularFirestoreModule, AngularFirestore, SETTINGS } from "@angular/fire/firestore";
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { AngularFirestoreModule, AngularFirestore, SETTINGS } from "@angular/fir
     FormsModule,
     ReactiveFormsModule,
     AngularFirestoreModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [
     AuthService,
