@@ -22,6 +22,7 @@
     <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/services/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/services/events.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/services/events.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +67,7 @@
       <workItem from="1598993338661" duration="1248000" />
       <workItem from="1598998078816" duration="267000" />
       <workItem from="1598998364735" duration="470000" />
-      <workItem from="1599041400507" duration="45039000" />
+      <workItem from="1599041400507" duration="50038000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1598998789345</created>
@@ -166,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599170683551</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix">
+      <created>1599174638255</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1599174638255</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,13 +219,13 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="689" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599079634060" />
-    <state x="551" y="255" key="Vcs.Push.Dialog.v2" timestamp="1599083047333">
+    <state x="551" y="255" key="Vcs.Push.Dialog.v2" timestamp="1599174647931">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="551" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599083047333" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599070419545">
+    <state x="551" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599174647931" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599202552672">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599070419545" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599202552672" />
   </component>
 </project>

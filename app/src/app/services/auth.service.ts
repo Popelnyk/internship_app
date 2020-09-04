@@ -6,6 +6,7 @@ import { AngularFireAuth } from "@angular/fire/auth";
 import { CordovaService } from "./cordova.service";
 import { AngularFirestore } from "@angular/fire/firestore";
 import { firestoreConfig } from "../../firestoreConfig";
+import {Observable} from "rxjs";
 
 
 @Injectable({
