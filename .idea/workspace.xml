@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="upd styles of event item">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
       <workItem from="1598993338661" duration="1248000" />
       <workItem from="1598998078816" duration="267000" />
       <workItem from="1598998364735" duration="470000" />
-      <workItem from="1599041400507" duration="56857000" />
+      <workItem from="1599041400507" duration="60266000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1598998789345</created>
@@ -186,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599224218463</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="upd styles of event item">
+      <created>1599226257592</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1599226257592</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

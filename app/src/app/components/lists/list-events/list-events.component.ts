@@ -21,7 +21,7 @@ export class ListEventsComponent implements OnInit {
                        .collection(firestoreConfig.events_endpoint);
     console.log('endpoint', firestoreConfig.users_endpoint, this.authService.user.uid, firestoreConfig.events_endpoint);
   }
-
+  //
   ngOnInit() {
     this.events = this.eventList.valueChanges();
   }
