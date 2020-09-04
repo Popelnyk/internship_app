@@ -68,6 +68,31 @@
       align-items: center;
       justify-content: center;
 
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      div > span {
+        color: #FFFFFF;
+      }
+
+      .date {
+        span {
+          position: absolute;
+          left: 60%;
+          font-size: 12px;
+        }
+      }
+
+      .title {
+        span {
+          position: absolute;
+          left: 2%;
+        }
+      }
+
       .delete {
         justify-content: center;
         position: absolute;
@@ -82,12 +107,6 @@
         border-color: #EA7676;
         padding: 0;
         display: flex;
-      }
-
-      div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
     }
   }
