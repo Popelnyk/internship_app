@@ -20,6 +20,8 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { EventsService } from "./services/events.service";
 import { AngularFirestoreModule, AngularFirestore, SETTINGS } from "@angular/fire/firestore";
 import { ServiceWorkerModule } from '@angular/service-worker';
+import {AngularFireMessaging, AngularFireMessagingModule} from "@angular/fire/messaging";
+import {NotificationService} from "./services/notification.service";
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     FormsModule,
     ReactiveFormsModule,
     AngularFirestoreModule,
+    AngularFireMessagingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [
@@ -47,6 +50,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     ModalsService,
     EventsService,
     AngularFirestore,
+    NotificationService,
   ],
   bootstrap: [AppComponent]
 })
