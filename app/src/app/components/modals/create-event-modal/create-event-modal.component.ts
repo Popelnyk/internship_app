@@ -16,7 +16,7 @@ export class CreateEventModalComponent implements OnInit{
   @Input() data;
 
   eventForm: FormGroup | null = null;
-  currentTime: number = Date.now();
+  currentTime: Date = new Date();
 
   constructor(public modalsService: ModalsService, public eventsService: EventsService) { }
 

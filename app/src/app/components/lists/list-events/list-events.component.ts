@@ -12,13 +12,16 @@ import {AuthService} from "../../../services/auth.service";
   styleUrls: ["./list-events.component.scss"],
 })
 export class ListEventsComponent implements OnInit {
+
   events: Observable<any[]> | null;
   eventList: AngularFirestoreCollection | null;
+  //defaultColor: string = "#4B9180";
+  //outDatedColor: string = "#888888";
 
   constructor(public modalsService: ModalsService, public eventsService: EventsService, private db: AngularFirestore,
               private authService: AuthService) {
     this.eventList = db.collection(firestoreConfig.users_endpoint).doc(this.authService.user.uid)
-                       .collection(firestoreConfig.events_endpoint);
+                       .collection(firestoreConfig.events_endpoint, ref => ref.orderBy('EventDate'));
     console.log('endpoint', firestoreConfig.users_endpoint, this.authService.user.uid, firestoreConfig.events_endpoint);
   }
 

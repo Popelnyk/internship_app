@@ -3,12 +3,13 @@
   width: 1068px;
   height: 800px;
   top: 130px;
-  background: rgba(248, 248, 248, 0.1);
+  background: rgba(107, 167, 152, 0.1);
+  backdrop-filter: blur(10px);
   border-radius: 3px;
 
   .top {
     width: inherit;
-    background: rgba(248, 248, 248, 0.2);
+    background: rgba(27, 50, 83, 0.4);
     border-radius: 3px;
     height: 63px;
     justify-content: flex-end;
@@ -49,6 +50,7 @@
     width: inherit;
     height: 720px;
     justify-content: center;
+    overflow: auto;
 
     .event > div {
       height: inherit;
@@ -103,8 +105,8 @@
         line-height: 25px;
         height: 33px;
         width: 33px;
-        color: #EA7676;
-        border-color: #EA7676;
+        color: rgba(27, 50, 83, 0.8);
+        border-color: rgba(27, 50, 83, 0.8);
         padding: 0;
         display: flex;
       }
