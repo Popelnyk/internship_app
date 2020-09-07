@@ -16,7 +16,7 @@
       <div class="date">
         <span>{{ item.EventDate | date:"short" }}</span>
       </div>
-      <button class="delete">-</button>
+      <button class="delete" (click)="onDeleteEvent(item.EventId)">-</button>
     </div>
   </div>
 </div>

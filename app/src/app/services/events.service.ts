@@ -13,6 +13,16 @@ export class EventsService {
   }
 
   addEvent(event) {
-    this.events.add(event);
+    return this.events.add(event).then(res =>
+      this.events.doc(res.id).update({
+        EventId: res.id
+      }).then(res => console.log(res))
+    );
+  }
+
+  deleteEvent(eventUi) {
+    return this.events.doc(eventUi).delete()
+      .then(res => console.log("deleted"))
+      .catch(err => console.log(err));
   }
 }

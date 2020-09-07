@@ -22,6 +22,7 @@ import { AngularFirestoreModule, AngularFirestore, SETTINGS } from "@angular/fir
 import { ServiceWorkerModule } from '@angular/service-worker';
 import {AngularFireMessaging, AngularFireMessagingModule} from "@angular/fire/messaging";
 import {NotificationService} from "./services/notification.service";
+import {DeleteEventModalComponent} from "./components/modals/delete-event-modal/delete-event-modal.component";
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import {NotificationService} from "./services/notification.service";
     MainLayoutComponent,
     ListEventsComponent,
     CreateEventModalComponent,
+    DeleteEventModalComponent,
     ModalComponent,
   ],
   imports: [

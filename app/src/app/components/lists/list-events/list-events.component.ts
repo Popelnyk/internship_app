@@ -27,6 +27,10 @@ export class ListEventsComponent implements OnInit {
   }
 
   onCreateEvent() {
-    this.modalsService.open(this.modalsService.modals.CREATE_EVENT_MODAL, /*Firebase user data (id)*/)
+    this.modalsService.open(this.modalsService.modals.CREATE_EVENT_MODAL, /*Firebase user data (id)*/);
+  }
+
+  onDeleteEvent(eventUi) {
+    this.modalsService.open(this.modalsService.modals.DELETE_EVENT_MODAL, eventUi);
   }
 }

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CREATE_EVENT_MODAL } from "../components/modals/create-event-modal/create-event-modal.component";
+import { DELETE_EVENT_MODAL } from "../components/modals/delete-event-modal/delete-event-modal.component";
 
 @Injectable()
 export class ModalsService {
@@ -9,19 +10,23 @@ export class ModalsService {
   }
 
   initModals(): void {
-    // for (const modalKey in this.modals) {
-    //   if (this.modals.hasOwnProperty(modalKey)) {
-    //     this.openedModals[modalKey] = false;
-    //   }
-    // }
+    /*
+     for (const modalKey in this.modals) {
+       if (this.modals.hasOwnProperty(modalKey)) {
+         this.openedModals[modalKey] = false;
+       }
+     }
+     */
   }
 
   openedModals = {
     [CREATE_EVENT_MODAL]: {isOpen: false, data: {}},
+    [DELETE_EVENT_MODAL]: {isOpen: false, data: {}},
   };
 
   modals = {
     CREATE_EVENT_MODAL,
+    DELETE_EVENT_MODAL,
   };
 
 
