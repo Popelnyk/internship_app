@@ -19,16 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="added ServiceWorkerModule">
-      <change afterPath="$PROJECT_DIR$/app/src/app/services/notification.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/firebase-messaging-sw.js" afterDir="false" />
+    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="added notification.service.ts for sending notifications to user, now it's working localy only and no server-side scripts are used">
+      <change afterPath="$PROJECT_DIR$/app/src/combined-sw.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/services/notification.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/services/notification.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/firebase-messaging-sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/firebase-messaging-sw.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +73,8 @@
       <workItem from="1598998078816" duration="267000" />
       <workItem from="1598998364735" duration="470000" />
       <workItem from="1599041400507" duration="60584000" />
+      <workItem from="1599424628680" duration="626000" />
+      <workItem from="1599430844535" duration="18027000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1598998789345</created>
@@ -214,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599233672253</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added notification.service.ts for sending notifications to user, now it's working localy only and no server-side scripts are used">
+      <created>1599419878926</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1599419878927</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,9 +256,14 @@
     <MESSAGE value="upd styles of event item" />
     <MESSAGE value="init" />
     <MESSAGE value="added ServiceWorkerModule" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ServiceWorkerModule" />
+    <MESSAGE value="added notification.service.ts for sending notifications to user, now it's working localy only and no server-side scripts are used" />
+    <option name="LAST_COMMIT_MESSAGE" value="added notification.service.ts for sending notifications to user, now it's working localy only and no server-side scripts are used" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="551" y="165" key="#Plugins" timestamp="1599431465504">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="551" y="165" key="#Plugins/0.0.1920.1050@0.0.1920.1050" timestamp="1599431465504" />
     <state x="827" y="435" key="#TSLint" timestamp="1599066601084">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -267,9 +281,9 @@
     </state>
     <state x="551" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599233689783" />
     <state x="551" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599174647931" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599202552672">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599431449708">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599202552672" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599431449708" />
   </component>
 </project>

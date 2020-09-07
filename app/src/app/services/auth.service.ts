@@ -6,7 +6,6 @@ import { AngularFireAuth } from "@angular/fire/auth";
 import { CordovaService } from "./cordova.service";
 import { AngularFirestore } from "@angular/fire/firestore";
 import { firestoreConfig } from "../../firestoreConfig";
-import {Observable} from "rxjs";
 
 
 @Injectable({
@@ -14,6 +13,7 @@ import {Observable} from "rxjs";
 })
 export class AuthService {
   user: User;
+  userToken: string | null;
 
   constructor(
     public router: Router,
@@ -24,15 +24,30 @@ export class AuthService {
   ) {
     this.afAuth.authState.subscribe(user => {
       this.user = user;
-      if (this.user && (this.user.email || this.user.displayName)) {
+      if (this.isUserLogged()) {
         this.db.collection<User>(firestoreConfig.users_endpoint).doc(user.uid).set({
           name: this.user.displayName,
           email: this.user.email,
+          token: null,
         })
           .then(id => console.log(id))
           .catch(err => console.log(err));
       }
     });
+  }
+
+  isUserLogged(): boolean {
+    return !!(this.user && (this.user.email || this.user.displayName));
+  }
+
+  setFcmToken(token: string) {
+    if (this.isUserLogged()) {
+      return this.db.collection<User>(firestoreConfig.users_endpoint).doc(this.user.uid).update({
+        token: token,
+      })
+        .then(() => { console.log("updated successfully"); this.userToken = token; })
+        .catch((err) => console.log(`an error occupied ${err}`));
+    }
   }
 
   //FireBase sign-in with pop up web version and redirect for mobile

@@ -17,7 +17,7 @@ export class AuthPageComponent implements OnInit{
               private notificationService: NotificationService) { }
 
   ngOnInit() {
-    this.notificationService.requestNotification();
+    this.notificationService.enableNotifications();
     this.notificationService.receiveNotification();
     this.show = this.notificationService.currentMessage;
 

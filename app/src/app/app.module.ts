@@ -42,7 +42,7 @@ import {NotificationService} from "./services/notification.service";
     ReactiveFormsModule,
     AngularFirestoreModule,
     AngularFireMessagingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('combined-sw.js', { enabled: environment.production }),
   ],
   providers: [
     AuthService,
