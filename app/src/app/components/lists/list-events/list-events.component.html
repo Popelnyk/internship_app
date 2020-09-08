@@ -6,7 +6,7 @@
     <button class="add" (click)="onCreateEvent()">+</button>
   </div>
   <div class="events-container">
-    <div class="event"  *ngFor="let item of events | async">
+    <div class="event" [style.background] *ngFor="let item of events | async">
       <div class="title">
         <span>{{ item.EventTitle }}</span>
       </div>

@@ -15,8 +15,8 @@ export class ListEventsComponent implements OnInit {
 
   events: Observable<any[]> | null;
   eventList: AngularFirestoreCollection | null;
-  //defaultColor: string = "#4B9180";
-  //outDatedColor: string = "#888888";
+  defaultColor: string = "#4B9180";
+  outDatedColor: string = "#888888";
 
   constructor(public modalsService: ModalsService, public eventsService: EventsService, private db: AngularFirestore,
               private authService: AuthService) {
