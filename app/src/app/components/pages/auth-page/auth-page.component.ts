@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { AuthService } from "../../../services/auth.service";
+import { UserService } from "../../../services/user.service";
 import { CordovaService } from "../../../services/cordova.service";
 import {NotificationService} from "../../../services/notification.service";
 
@@ -13,7 +13,7 @@ export class AuthPageComponent implements OnInit{
   googleLogoUrl: string = "https://img.icons8.com/clouds/200/000000/google-logo.png";
   show: any = null;
 
-  constructor(public authService: AuthService, public cordovaService: CordovaService,
+  constructor(public authService: UserService, public cordovaService: CordovaService,
               private notificationService: NotificationService) { }
 
   ngOnInit() {

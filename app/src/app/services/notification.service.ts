@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFireMessaging } from '@angular/fire/messaging';
 import { BehaviorSubject } from 'rxjs'
-import { AuthService } from "./auth.service";
+import { UserService } from "./user.service";
 
 @Injectable()
 export class NotificationService {
@@ -9,7 +9,7 @@ export class NotificationService {
   currentMessage = new BehaviorSubject(null);
   private unsubscribeOnTokenRefresh: Promise<any>;
 
-  constructor(private angularFireMessaging: AngularFireMessaging, private authService: AuthService) { }
+  constructor(private angularFireMessaging: AngularFireMessaging, private authService: UserService) { }
 
   enableNotifications() {
     this.angularFireMessaging.requestToken.subscribe((token) => {

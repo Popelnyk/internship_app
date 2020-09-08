@@ -1,5 +1,5 @@
 import {Component, OnInit} from "@angular/core";
-import {AuthService} from "../../../services/auth.service";
+import {UserService} from "../../../services/user.service";
 import {CordovaService} from "../../../services/cordova.service";
 import {NotificationService} from "../../../services/notification.service";
 
@@ -9,7 +9,7 @@ import {NotificationService} from "../../../services/notification.service";
   styleUrls: ["./main-layout.component.scss"],
 })
 export class MainLayoutComponent implements OnInit{
-  constructor(public authService: AuthService, public cordovaService: CordovaService,
+  constructor(public authService: UserService, public cordovaService: CordovaService,
               public notificationsService: NotificationService) { }
 
   ngOnInit() {

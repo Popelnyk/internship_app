@@ -11,7 +11,7 @@ import { firestoreConfig } from "../../firestoreConfig";
 @Injectable({
   providedIn: "root"
 })
-export class AuthService {
+export class UserService {
   user: User;
   userToken: string | null;
 

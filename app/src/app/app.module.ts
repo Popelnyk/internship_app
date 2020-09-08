@@ -9,7 +9,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { environment } from "../environments/environment.prod";
-import { AuthService } from "./services/auth.service";
+import { UserService } from "./services/user.service";
 import { AngularFireAnalyticsModule } from "@angular/fire/analytics";
 import { CordovaService } from "./services/cordova.service";
 import { ListEventsComponent } from "./components/lists/list-events/list-events.component";
@@ -47,7 +47,7 @@ import {DeleteEventModalComponent} from "./components/modals/delete-event-modal/
     ServiceWorkerModule.register('combined-sw.js', { enabled: environment.production }),
   ],
   providers: [
-    AuthService,
+    UserService,
     CordovaService,
     ModalsService,
     EventsService,

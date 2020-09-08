@@ -1,10 +1,10 @@
 import {Component, OnDestroy, OnInit} from "@angular/core";
 import {ModalsService} from "../../../services/modal.service";
-import {Observable} from "rxjs";
+import {Observable, Observer} from "rxjs";
 import {AngularFirestore, AngularFirestoreCollection} from "@angular/fire/firestore";
 import {EventsService} from "../../../services/events.service";
 import {firestoreConfig} from "../../../../firestoreConfig";
-import {AuthService} from "../../../services/auth.service";
+import {UserService} from "../../../services/user.service";
 
 @Component({
   selector: "app-list-events",
@@ -18,8 +18,18 @@ export class ListEventsComponent implements OnInit {
   defaultColor: string = "#4B9180";
   outDatedColor: string = "#888888";
 
+  /*
+  time = new Observable<any>((observer: Observer<any>) => {
+    setInterval(() => {
+        observer.next(new Date().toString());
+        console.log(new Date().toString());
+      }, 1000
+    );
+  })
+   */
+
   constructor(public modalsService: ModalsService, public eventsService: EventsService, private db: AngularFirestore,
-              private authService: AuthService) {
+              private authService: UserService) {
     this.eventList = db.collection(firestoreConfig.users_endpoint).doc(this.authService.user.uid)
                        .collection(firestoreConfig.events_endpoint, ref => ref.orderBy('EventDate'));
     console.log('endpoint', firestoreConfig.users_endpoint, this.authService.user.uid, firestoreConfig.events_endpoint);
@@ -35,5 +45,17 @@ export class ListEventsComponent implements OnInit {
 
   onDeleteEvent(eventUi) {
     this.modalsService.open(this.modalsService.modals.DELETE_EVENT_MODAL, eventUi);
+  }
+
+  onEventEndsColor(deadlineDateStr: string, title) {
+    let date = new Date().getTime();
+    let deadline = new Date(deadlineDateStr).getTime();
+    let difference = (deadline - date) / (1000 * 60);
+    console.log(difference.valueOf());
+    if (difference < 3) {
+      console.log('ye');
+      return "#D15858"
+    }
+    return "#1FA292";
   }
 }

@@ -1,15 +1,17 @@
 import {Injectable, OnInit} from "@angular/core";
 import {AngularFirestore, AngularFirestoreCollection} from "@angular/fire/firestore";
 import { firestoreConfig } from "../../firestoreConfig";
-import { AuthService } from "./auth.service";
+import { UserService } from "./user.service";
+import {Observable, Observer} from "rxjs";
 
 @Injectable()
 export class EventsService {
   events: AngularFirestoreCollection | null;
 
-  constructor(private db: AngularFirestore, private authService: AuthService) {
+  constructor(private db: AngularFirestore, private authService: UserService) {
     this.events = db.collection(firestoreConfig.users_endpoint).doc(this.authService.user.uid)
                     .collection(firestoreConfig.events_endpoint);
+    console.log(this.events);
   }
 
   addEvent(event) {
@@ -24,5 +26,9 @@ export class EventsService {
     return this.events.doc(eventUi).delete()
       .then(res => console.log("deleted"))
       .catch(err => console.log(err));
+  }
+
+  dateTracker(date) {
+
   }
 }
