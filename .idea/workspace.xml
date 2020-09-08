@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="notifications foreground events styles">
+    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="notifications foreground , firestore, fire-messaging-sw">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.html" afterDir="false" />
@@ -71,7 +71,7 @@
       <workItem from="1598998364735" duration="470000" />
       <workItem from="1599041400507" duration="60584000" />
       <workItem from="1599424628680" duration="626000" />
-      <workItem from="1599430844535" duration="52370000" />
+      <workItem from="1599430844535" duration="52799000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1598998789345</created>
@@ -269,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599603919163</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="notifications foreground , firestore, fire-messaging-sw">
+      <created>1599604203949</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1599604203949</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,9 +315,14 @@
     <MESSAGE value="improved styles for events + ordering by time" />
     <MESSAGE value="notifications foreground" />
     <MESSAGE value="notifications foreground events styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="notifications foreground events styles" />
+    <MESSAGE value="notifications foreground , firestore, fire-messaging-sw" />
+    <option name="LAST_COMMIT_MESSAGE" value="notifications foreground , firestore, fire-messaging-sw" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="701" y="348" key="#Notifications" timestamp="1599604317620">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="701" y="348" key="#Notifications/0.0.1920.1050@0.0.1920.1050" timestamp="1599604317620" />
     <state x="551" y="165" key="#Plugins" timestamp="1599431465504">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -327,11 +339,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="689" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599079634060" />
-    <state x="551" y="255" key="Vcs.Push.Dialog.v2" timestamp="1599603356252">
+    <state x="551" y="255" key="Vcs.Push.Dialog.v2" timestamp="1599604239444">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="551" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599233689783" />
-    <state x="551" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599603356252" />
+    <state x="551" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599604239444" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599431449708">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
