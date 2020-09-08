@@ -1,0 +1,89 @@
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  background: rgba(32, 32, 32, 0.85);
+  border-radius: 3px;
+  top: 120px;
+  justify-content: center;
+  height: 400px;
+
+  .header {
+    width: inherit;
+    height: 70px;
+    justify-content: center;
+    display: flex;
+
+    .modal-name {
+      top: 15px;
+      height: 30px;
+      color: #FFFFFF;
+      font-weight: 500;
+    }
+
+    .close {
+      justify-content: center;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 25px;
+      height: 33px;
+      width: 33px;
+      color: #EA7676;
+      border-color: #EA7676;
+      padding: 0;
+      display: flex;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #CED4DA;
+      background-color: transparent;
+      overflow: hidden;
+      outline: none;
+      color: #FFFFFF;
+      width: 250px;
+    }
+
+    textarea {
+      width: 250px;
+      height: 80px;
+      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+      outline: none;
+      box-shadow: none;
+      border: none;
+      border-bottom: 1px solid #CED4DA;
+      border-radius: 0;
+      box-sizing: content-box;
+      background-color: transparent;
+      overflow: auto;
+      resize: none;
+      margin-top: 30px;
+      color: #FFFFFF;
+    }
+
+    .input-time {
+      margin-top: 40px;
+    }
+
+    .btn-add-event {
+      margin-top: 40px;
+      width: 130px;
+      height: 40px;
+    }
+  }
+
+  span {
+    color: #FFFFFF;
+  }
+}
+

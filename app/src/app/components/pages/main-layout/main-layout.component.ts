@@ -1,5 +1,7 @@
 import {Component, OnInit} from "@angular/core";
-import {AuthService} from "../../../services/auth.service";
+import {UserService} from "../../../services/user.service";
+import {CordovaService} from "../../../services/cordova.service";
+import {NotificationService} from "../../../services/notification.service";
 
 @Component({
   selector: "app-main-layout",
@@ -7,14 +9,10 @@ import {AuthService} from "../../../services/auth.service";
   styleUrls: ["./main-layout.component.scss"],
 })
 export class MainLayoutComponent implements OnInit{
-  constructor(public authService: AuthService) { }
+  constructor(public authService: UserService, public cordovaService: CordovaService,
+              public notificationsService: NotificationService) { }
 
-  ngOnInit() { }
-
-  getName(): string {
-    if (this.authService.user.email !== null) {
-      return this.authService.user.displayName;
-    }
-    return "Anonymous user";
+  ngOnInit() {
+    this.notificationsService.enableNotifications();
   }
 }

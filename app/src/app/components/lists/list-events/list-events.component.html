@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="top">
+    <h3>Title</h3>
+    <h3>Description</h3>
+    <h3>Date</h3>
+    <button class="add" (click)="onCreateEvent()">+</button>
+  </div>
+  <div class="events-container">
+    <div class="event" [style.background]="onEventEndsColor(item.EventDate, item.EventTitle, item.EventDescription)" *ngFor="let item of events | async">
+      <div class="title">
+        <span>{{ item.EventTitle }}</span>
+      </div>
+      <div class="description">
+        <span>{{ item.EventDescription }}</span>
+      </div>
+      <div class="date">
+        <span>{{ item.EventDate | date:"short" }}</span>
+      </div>
+      <button class="delete" (click)="onDeleteEvent(item.EventId)">-</button>
+    </div>
+  </div>
+</div>
