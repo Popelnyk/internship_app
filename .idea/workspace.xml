@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="notifications foreground">
+    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="notifications foreground events styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.html" afterDir="false" />
@@ -71,7 +71,7 @@
       <workItem from="1598998364735" duration="470000" />
       <workItem from="1599041400507" duration="60584000" />
       <workItem from="1599424628680" duration="626000" />
-      <workItem from="1599430844535" duration="52123000" />
+      <workItem from="1599430844535" duration="52370000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1598998789345</created>
@@ -262,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599603287273</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="notifications foreground">
+      <created>1599603919163</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1599603919163</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +307,8 @@
     <MESSAGE value="deleting + adding events are ready, notifications are available only threw postman or curl" />
     <MESSAGE value="improved styles for events + ordering by time" />
     <MESSAGE value="notifications foreground" />
-    <option name="LAST_COMMIT_MESSAGE" value="notifications foreground" />
+    <MESSAGE value="notifications foreground events styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="notifications foreground events styles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="551" y="165" key="#Plugins" timestamp="1599431465504">
