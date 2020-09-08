@@ -9,17 +9,31 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { environment } from "../environments/environment.prod";
-import { AuthService } from "./services/auth.service";
+import { UserService } from "./services/user.service";
 import { AngularFireAnalyticsModule } from "@angular/fire/analytics";
-import {CordovaService} from "./services/cordova.service";
-
-//import { DeviceDetectorModule } from "ngx-device-detector";
+import { CordovaService } from "./services/cordova.service";
+import { ListEventsComponent } from "./components/lists/list-events/list-events.component";
+import { CreateEventModalComponent } from "./components/modals/create-event-modal/create-event-modal.component";
+import { ModalsService } from "./services/modal.service";
+import { ModalComponent } from "./ui/Modal/modal.component";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { EventsService } from "./services/events.service";
+import { AngularFirestoreModule, AngularFirestore, SETTINGS } from "@angular/fire/firestore";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import {AngularFireMessaging, AngularFireMessagingModule} from "@angular/fire/messaging";
+import {NotificationService} from "./services/notification.service";
+import {DeleteEventModalComponent} from "./components/modals/delete-event-modal/delete-event-modal.component";
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthPageComponent,
     MainLayoutComponent,
+    ListEventsComponent,
+    CreateEventModalComponent,
+    DeleteEventModalComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,8 +41,21 @@ import {CordovaService} from "./services/cordova.service";
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAnalyticsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AngularFirestoreModule,
+    AngularFireMessagingModule,
+    HttpClientModule,
+    ServiceWorkerModule.register('combined-sw.js', { enabled: environment.production }),
   ],
-  providers: [AuthService, CordovaService],
+  providers: [
+    UserService,
+    CordovaService,
+    ModalsService,
+    EventsService,
+    AngularFirestore,
+    NotificationService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
