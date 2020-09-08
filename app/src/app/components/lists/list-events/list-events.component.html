@@ -6,7 +6,7 @@
     <button class="add" (click)="onCreateEvent()">+</button>
   </div>
   <div class="events-container">
-    <div class="event" [style.background]="onEventEndsColor(item.EventDate, item.EventTitle)" *ngFor="let item of events | async">
+    <div class="event" [style.background]="onEventEndsColor(item.EventDate, item.EventTitle, item.EventDescription)" *ngFor="let item of events | async">
       <div class="title">
         <span>{{ item.EventTitle }}</span>
       </div>

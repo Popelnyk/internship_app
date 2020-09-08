@@ -23,6 +23,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import {AngularFireMessaging, AngularFireMessagingModule} from "@angular/fire/messaging";
 import {NotificationService} from "./services/notification.service";
 import {DeleteEventModalComponent} from "./components/modals/delete-event-modal/delete-event-modal.component";
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import {DeleteEventModalComponent} from "./components/modals/delete-event-modal/
     ReactiveFormsModule,
     AngularFirestoreModule,
     AngularFireMessagingModule,
+    HttpClientModule,
     ServiceWorkerModule.register('combined-sw.js', { enabled: environment.production }),
   ],
   providers: [
