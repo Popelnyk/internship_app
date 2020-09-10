@@ -19,46 +19,54 @@ export class ListEventsComponent implements OnInit {
   defaultColor: string = "#4B9180";
   outDatedColor: string = "#888888";
 
-  /*
   time = new Observable<any>((observer: Observer<any>) => {
     setInterval(() => {
         observer.next(new Date().toString());
-        console.log(new Date().toString());
-      }, 1000
-    );
+        this.checkEventsDates(this.authService.userToken);
+      }, 30000);
   })
-   */
 
-  constructor(public modalsService: ModalsService, public eventsService: EventsService, private db: AngularFirestore,
-              private authService: UserService, private notificationService: NotificationService, private zone: NgZone) {
+  constructor(
+    public modalsService: ModalsService,
+    private db: AngularFirestore,
+    private authService: UserService,
+    private notificationsService: NotificationService
+  ) {
     this.eventList = db.collection(firestoreConfig.users_endpoint).doc(this.authService.user.uid)
                        .collection(firestoreConfig.events_endpoint, ref => ref.orderBy('EventDate'));
-    console.log('endpoint', firestoreConfig.users_endpoint, this.authService.user.uid, firestoreConfig.events_endpoint);
   }
 
-  ngOnInit() {
+  async ngOnInit() {
+    await this.notificationsService.enableNotifications();
     this.events = this.eventList.valueChanges();
   }
 
   onCreateEvent() {
-    this.modalsService.open(this.modalsService.modals.CREATE_EVENT_MODAL, /*Firebase user data (id)*/);
+    this.modalsService.open(this.modalsService.modals.CREATE_EVENT_MODAL);
   }
 
   onDeleteEvent(eventUi) {
     this.modalsService.open(this.modalsService.modals.DELETE_EVENT_MODAL, eventUi);
   }
 
-  onEventEndsColor(deadlineDateStr: string, title: string, description: string) {
+  compareDateNowAndEventDate(eventDateStr: string) {
     let date = new Date().getTime();
-    let deadline = new Date(deadlineDateStr).getTime();
+    let deadline = new Date(eventDateStr).getTime();
     let difference = (deadline - date) / (1000 * 60);
-    console.log(difference.valueOf());
-
-    if (difference < 3) {
-      console.log('ye');
-      //this.notificationService.sendLocalNotifications(`${title} almost out of date`, description);
-      return "#D15858"
-    }
-    return "#1FA292";
+    return difference < 30;
   }
+
+  checkEventsDates(token: string) {
+    this.events.subscribe(values => {
+      for (let item of values) {
+        if (this.compareDateNowAndEventDate(item.EventDate)) {
+          this.notificationsService.sendLocalNotifications(`${item.EventTitle} event is coming to an end`,
+            item.EventDescription, token);
+        }
+      }
+    });
+  }
+
 }
+
+//test

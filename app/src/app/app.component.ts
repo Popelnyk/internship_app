@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ModalsService } from "./services/modal.service";
+import {Component} from '@angular/core';
+import {ModalsService} from "./services/modal.service";
 
 
 @Component({
@@ -17,4 +17,5 @@ export class AppComponent {
   openModal(type: string) {
     this.modalsService.open(type);
   }
+
 }

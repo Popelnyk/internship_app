@@ -43,4 +43,5 @@ export class CreateEventModalComponent implements OnInit{
     await this.eventsService.addEvent(values);
     this.cbClose.emit();
   }
+
 }
