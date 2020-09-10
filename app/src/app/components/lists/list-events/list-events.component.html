@@ -6,7 +6,7 @@
     <button class="add" (click)="onCreateEvent()">+</button>
   </div>
   <div class="events-container">
-    <div class="event" [style.background]="onEventEndsColor(item.EventDate, item.EventTitle, item.EventDescription)" *ngFor="let item of events | async">
+    <div class="event" *ngFor="let item of events | async">
       <div class="title">
         <span>{{ item.EventTitle }}</span>
       </div>
@@ -19,4 +19,5 @@
       <button class="delete" (click)="onDeleteEvent(item.EventId)">-</button>
     </div>
   </div>
+  <div style="visibility: hidden">{{time | async}}</div>
 </div>

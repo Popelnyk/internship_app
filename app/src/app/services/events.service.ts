@@ -1,7 +1,7 @@
 import {Injectable, OnInit} from "@angular/core";
 import {AngularFirestore, AngularFirestoreCollection} from "@angular/fire/firestore";
-import { firestoreConfig } from "../../firestoreConfig";
-import { UserService } from "./user.service";
+import {firestoreConfig} from "../../firestoreConfig";
+import {UserService} from "./user.service";
 import {Observable, Observer} from "rxjs";
 
 @Injectable()
@@ -11,7 +11,6 @@ export class EventsService {
   constructor(private db: AngularFirestore, private authService: UserService) {
     this.events = db.collection(firestoreConfig.users_endpoint).doc(this.authService.user.uid)
                     .collection(firestoreConfig.events_endpoint);
-    console.log(this.events);
   }
 
   addEvent(event) {
@@ -28,7 +27,4 @@ export class EventsService {
       .catch(err => console.log(err));
   }
 
-  dateTracker(date) {
-
-  }
 }
