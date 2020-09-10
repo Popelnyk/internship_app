@@ -36,6 +36,7 @@ export class CordovaService {
     this.resume.next(true);
   }
 
+  /*
   public notify(): void {
     _window().navigator.notification.confirm(
       'You are the winner!',
@@ -44,4 +45,6 @@ export class CordovaService {
       ['Restart','Exit']
     );
   }
+   */
+
 }

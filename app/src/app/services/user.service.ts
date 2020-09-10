@@ -1,17 +1,18 @@
-import { Injectable, NgZone } from "@angular/core";
-import { auth } from "firebase/app";
-import { User } from "../interfaces/user";
-import { Router } from "@angular/router";
-import { AngularFireAuth } from "@angular/fire/auth";
-import { CordovaService } from "./cordova.service";
-import { AngularFirestore } from "@angular/fire/firestore";
-import { firestoreConfig } from "../../firestoreConfig";
+import {Injectable, NgZone} from "@angular/core";
+import {auth} from "firebase/app";
+import {User} from "../interfaces/user";
+import {Router} from "@angular/router";
+import {AngularFireAuth} from "@angular/fire/auth";
+import {CordovaService} from "./cordova.service";
+import {AngularFirestore} from "@angular/fire/firestore";
+import {firestoreConfig} from "../../firestoreConfig";
 
 
 @Injectable({
   providedIn: "root"
 })
 export class UserService {
+
   user: User;
   userToken: string | null;
 
@@ -29,8 +30,7 @@ export class UserService {
           name: this.user.displayName,
           email: this.user.email,
           token: null,
-        })
-          .then(id => console.log(id))
+        }).then()
           .catch(err => console.log(err));
       }
     });
@@ -44,16 +44,15 @@ export class UserService {
     if (this.isUserLogged()) {
       return this.db.collection<User>(firestoreConfig.users_endpoint).doc(this.user.uid).update({
         token: token,
-      })
-        .then(() => { console.log("updated successfully"); this.userToken = token; })
-        .catch((err) => console.log(`an error occupied ${err}`));
+      }).then(() => { this.userToken = token; })
+        .catch((err) => console.log(err));
     }
   }
 
   //FireBase sign-in with pop up web version and redirect for mobile
-  OAuthProvider(provider: auth.AuthProvider) {
+  async OAuthProvider(provider: auth.AuthProvider) {
     if (!this.cordovaService.onCordova) {
-      return this.afAuth.signInWithPopup(provider)
+      return await this.afAuth.signInWithPopup(provider)
         .then(res => {
           this.ngZone.run(() => {
             this.router.navigate(['main-layout']);
@@ -87,7 +86,6 @@ export class UserService {
       }).catch(error => {
         window.alert(error);
       })
-
   }
 
   SignOut() {
@@ -95,4 +93,5 @@ export class UserService {
       this.router.navigate(['login']);
     })
   }
+
 }
