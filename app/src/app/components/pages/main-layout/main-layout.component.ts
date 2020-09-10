@@ -14,5 +14,6 @@ export class MainLayoutComponent implements OnInit{
 
   ngOnInit() {
     this.notificationsService.enableNotifications();
+    this.notificationsService.sendLocalNotifications('exe', 'exe');
   }
 }
