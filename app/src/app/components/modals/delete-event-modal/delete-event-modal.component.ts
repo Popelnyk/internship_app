@@ -17,7 +17,6 @@ export class DeleteEventModalComponent {
   constructor(public modalsService: ModalsService, public eventsService: EventsService) { }
 
   async onSubmit() {
-    console.log(this.data);
     await this.eventsService.deleteEvent(this.data);
     this.cbClose.emit();
   }
