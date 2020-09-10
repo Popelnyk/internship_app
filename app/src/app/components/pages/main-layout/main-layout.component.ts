@@ -9,11 +9,12 @@ import {NotificationService} from "../../../services/notification.service";
   styleUrls: ["./main-layout.component.scss"],
 })
 export class MainLayoutComponent implements OnInit{
+
   constructor(public authService: UserService, public cordovaService: CordovaService,
               public notificationsService: NotificationService) { }
 
   ngOnInit() {
-    this.notificationsService.enableNotifications();
-    this.notificationsService.sendLocalNotifications('exe', 'exe');
+    console.log('main-layout logged: ', this.authService.isUserLogged());
   }
+
 }

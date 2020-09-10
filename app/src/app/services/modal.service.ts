@@ -5,19 +5,7 @@ import { DELETE_EVENT_MODAL } from "../components/modals/delete-event-modal/dele
 @Injectable()
 export class ModalsService {
 
-  constructor() {
-    this.initModals();
-  }
-
-  initModals(): void {
-    /*
-     for (const modalKey in this.modals) {
-       if (this.modals.hasOwnProperty(modalKey)) {
-         this.openedModals[modalKey] = false;
-       }
-     }
-     */
-  }
+  constructor() { }
 
   openedModals = {
     [CREATE_EVENT_MODAL]: {isOpen: false, data: {}},
