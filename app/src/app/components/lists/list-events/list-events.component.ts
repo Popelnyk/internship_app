@@ -23,7 +23,7 @@ export class ListEventsComponent implements OnInit {
     setInterval(() => {
         observer.next(new Date().toString());
         this.checkEventsDates(this.authService.userToken);
-      }, 30000);
+      }, 60000);
   })
 
   constructor(

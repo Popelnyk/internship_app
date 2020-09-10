@@ -1,6 +1,7 @@
 importScripts('https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/7.8.1/firebase-messaging.js');
 
+
 firebase.initializeApp({
   apiKey: "AIzaSyCty5qQN1thUfGHu_He0-yQFwqgO9SpogU",
   authDomain: "internship-app-f1160.firebaseapp.com",
@@ -11,6 +12,7 @@ firebase.initializeApp({
   appId: "1:156908797671:web:ff5682ac5ad8fd1700ac42",
   measurementId: "G-BW3ERX7G6E",
 });
+
 
 const messaging = firebase.messaging();
 

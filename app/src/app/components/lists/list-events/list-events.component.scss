@@ -1,14 +1,20 @@
 .container {
   position: relative;
-  width: 1068px;
-  height: 800px;
-  top: 130px;
+  //width: 1068px;
+  //height: 800px;
+  min-width: 320px;
+  //top: 130px;
   background: rgba(107, 167, 152, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 3px;
 
+  @media (min-width: 320px) {
+    width: 100%;
+    height: 100vh;
+  }
+
   .top {
-    width: inherit;
+    //width: inherit;
     background: rgba(27, 50, 83, 0.4);
     border-radius: 3px;
     height: 63px;
@@ -38,6 +44,20 @@
       top: 2%;
       border-radius: 40px;
     }
+
+    @media (min-width: 320px) {
+      h3:nth-child(2) {
+        visibility: hidden;
+      }
+
+      h3:nth-child(3) {
+        left: 65%;
+      }
+
+      .add {
+        right: 16px;
+      }
+    }
   }
 
   .top > h3 {
@@ -48,10 +68,14 @@
   }
 
   .events-container {
-    width: inherit;
-    height: 720px;
+    //width: inherit;
+    //height: 720px;
     justify-content: center;
     overflow: auto;
+
+    @media (min-width: 320px) {
+      height: 90%;
+    }
 
     .event > div {
       height: inherit;
@@ -61,8 +85,8 @@
 
     .event {
       position: relative;
-      width: 1028px;
-      height: 51px;
+      //width: 1028px;
+      //height: 51px;
       background: #1FA292;
       border-radius: 3px;
       margin-top: 17px;
@@ -71,6 +95,11 @@
       align-items: center;
       justify-content: center;
       box-shadow: 0px 1px 2px rgba(35, 190, 172, 0.73);
+
+      @media (min-width: 320px) {
+        height: 55px;
+        margin-left: 0;
+      }
 
       div {
         display: flex;
@@ -83,10 +112,22 @@
       }
 
       .date {
+        display: flex;
+        justify-content: center;
+
         span {
-          position: absolute;
-          left: 60%;
+          position: relative;
           font-size: 12px;
+        }
+
+        @media (min-width: 320px) {
+          right: 10%;
+        }
+      }
+
+      .description {
+        @media (min-width: 320px) {
+          visibility: hidden;
         }
       }
 

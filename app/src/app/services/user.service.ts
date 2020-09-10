@@ -90,6 +90,7 @@ export class UserService {
 
   SignOut() {
     return this.afAuth.signOut().then(() => {
+      this.userToken = null;
       this.router.navigate(['login']);
     })
   }

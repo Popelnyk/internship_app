@@ -1,12 +1,21 @@
 .modal {
-  position: relative;
   width: 100%;
-  max-width: 420px;
   background: rgba(32, 32, 32, 0.85);
   border-radius: 3px;
   top: 120px;
   justify-content: center;
-  height: 400px;
+
+  @media (min-width: 320px) {
+    width: 100vw;
+    height: 400px;
+    left: 5px;
+    position: absolute;
+  }
+  @media (min-width: 440px) {
+    width: 400px;
+    height: 400px;
+    position: relative;
+  }
 
   .header {
     width: inherit;
@@ -24,7 +33,7 @@
     .close {
       justify-content: center;
       position: absolute;
-      right: 15px;
+      right: 20px;
       top: 15px;
       font-weight: 500;
       font-size: 28px;

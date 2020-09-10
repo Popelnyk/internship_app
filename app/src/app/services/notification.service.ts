@@ -54,6 +54,10 @@ export class NotificationService {
    */
 
   sendLocalNotifications(title: string, description: string, token: string) {
+    if (!token) {
+      return;
+    }
+
     let notificationBody = {
       "notification": {
         "title": `${title}`,
