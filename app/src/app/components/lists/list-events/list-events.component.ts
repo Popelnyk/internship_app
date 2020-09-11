@@ -28,8 +28,8 @@ export class ListEventsComponent implements OnInit {
 
   constructor(
     public modalsService: ModalsService,
+    public authService: UserService,
     private db: AngularFirestore,
-    private authService: UserService,
     private notificationsService: NotificationService
   ) {
     this.eventList = db.collection(firestoreConfig.users_endpoint).doc(this.authService.user.uid)
