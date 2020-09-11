@@ -24,25 +24,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="workspace.xml">
+    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="responsible markup&#10;firebase deploy&#10;updated notifications">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.firebase/hosting.ZGlzdFxhcHA.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.firebaserc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/firebase-debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/firebase.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/firestore.indexes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/firestore.rules" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/modals/create-event-modal/create-event-modal.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/modals/create-event-modal/create-event-modal.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/services/notification.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/services/notification.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/ui/Modal/modal.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/ui/Modal/modal.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/firebase-messaging-sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/firebase-messaging-sw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/storage.rules" beforeDir="false" afterPath="$PROJECT_DIR$/app/storage.rules" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599603919163</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="responsible markup&#10;firebase deploy&#10;updated notifications">
+      <created>1599775795230</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1599775795230</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +317,8 @@
     <MESSAGE value="improved styles for events + ordering by time" />
     <MESSAGE value="notifications foreground" />
     <MESSAGE value="notifications foreground events styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="notifications foreground events styles" />
+    <MESSAGE value="responsible markup&#10;firebase deploy&#10;updated notifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsible markup&#10;firebase deploy&#10;updated notifications" />
   </component>
   <component name="WindowStateProjectService">
     <state x="551" y="165" key="#Plugins" timestamp="1599431465504">

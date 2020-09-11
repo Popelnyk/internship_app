@@ -13,6 +13,9 @@
   @media (max-width: 480px) {
     background-image: url("https://images.wallpaperscraft.ru/image/list_vetka_temnyj_117447_720x1280.jpg");
   }
+  @media (min-width: 720px) {
+    display: flex;
+  }
 
   .welcome-msg {
     position: absolute;
