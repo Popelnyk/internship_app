@@ -16,8 +16,6 @@ export class ListEventsComponent implements OnInit {
 
   events: Observable<any[]> | null;
   eventList: AngularFirestoreCollection | null;
-  defaultColor: string = "#4B9180";
-  outDatedColor: string = "#888888";
 
   time = new Observable<any>((observer: Observer<any>) => {
     setInterval(() => {
@@ -36,8 +34,8 @@ export class ListEventsComponent implements OnInit {
                        .collection(firestoreConfig.events_endpoint, ref => ref.orderBy('EventDate'));
   }
 
-  async ngOnInit() {
-    await this.notificationsService.enableNotifications();
+  /*async*/ ngOnInit() {
+    //await this.notificationsService.enableNotifications();
     this.events = this.eventList.valueChanges();
   }
 
@@ -70,3 +68,4 @@ export class ListEventsComponent implements OnInit {
 }
 
 //test
+//TODO: try to exclude service worker from app

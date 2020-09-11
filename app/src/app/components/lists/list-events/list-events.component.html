@@ -3,7 +3,7 @@
     <!--<h3>Title</h3>
     <h3>{{authService.user.email}}</h3>
     -->
-    <h3>{{events}}</h3>
+    <h3>{{time | async}}</h3>
     <h3>Description</h3>
     <h3>Date</h3>
     <button class="add" (click)="onCreateEvent()">+</button>
@@ -22,5 +22,4 @@
       <button class="delete" (click)="onDeleteEvent(item.EventId)">-</button>
     </div>
   </div>
-  <div style="visibility: hidden; width: 0; height: 0;">{{time | async}}</div>
 </div>

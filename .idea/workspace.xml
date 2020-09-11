@@ -26,14 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="responsible markup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mobile/ul_web_hooks/android/android_web_hook.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mobile/ul_web_hooks/android/android_web_hook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mobile/www/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/mobile/www/3rdpartylicenses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mobile/www/5.aefffcee0edf82cb7f92.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/mobile/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mobile/www/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mobile/www/main.60f83a670dce43429a36.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mobile/www/polyfills.df8df8924122ea727a19.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mobile/www/runtime.8cb10227604cba191bc6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mobile/www/styles.72554de250fbb651c3b6.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.ts" afterDir="false" />
     </list>
@@ -305,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599839931850</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="responsible markup">
+      <created>1599846917729</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1599846917729</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
