@@ -27,7 +27,6 @@
     <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="responsible markup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +41,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="6d99b7414f7724c65664bf4a8055075bcdca1291" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gvRyQ8t9VvyowQeZHDEKEG2vUK" />

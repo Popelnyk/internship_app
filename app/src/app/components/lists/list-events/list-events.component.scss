@@ -135,8 +135,10 @@
       }
 
       .description {
-        @media (min-width: 320px) {
-          visibility: hidden;
+        visibility: hidden;
+
+        @media (min-width: 720px) {
+          visibility: visible;
         }
       }
 
