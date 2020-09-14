@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "156908797671",
+    "firebase_url": "https://internship-app-f1160.firebaseio.com",
+    "project_id": "internship-app-f1160",
+    "storage_bucket": "internship-app-f1160.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156908797671:android:79dfb40d414ec91100ac42",
+        "android_client_info": {
+          "package_name": "io.cordova.hellocordova"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156908797671-m3avn0ccb04q87q7g6ahr4p6g0dqat6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVynNs2PvgcdDxcB8kW_D5iTkmckwtHeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156908797671-m3avn0ccb04q87q7g6ahr4p6g0dqat6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

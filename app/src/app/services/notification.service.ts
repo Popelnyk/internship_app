@@ -4,6 +4,7 @@ import {BehaviorSubject} from 'rxjs'
 import {UserService} from "./user.service";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {environment} from "../../environments/environment.prod";
+import {CordovaService} from "./cordova.service";
 
 @Injectable()
 export class NotificationService {
@@ -20,17 +21,17 @@ export class NotificationService {
   };
 
   constructor(private angularFireMessaging: AngularFireMessaging, private userService: UserService,
-              private http: HttpClient, private zone: NgZone) { }
+              private http: HttpClient) { }
 
-  async enableNotifications() {
-    return new Promise((resolve, reject) => {
+  enableNotifications() {
+   // return new Promise((resolve, reject) => {
       this.angularFireMessaging.requestToken.subscribe((token) => {
         this.notificationReceiverToken = token;
-        resolve(token);
+        //resolve(token);
         this.updateToken();
         this.setupOnTokenRefresh();
       });
-    });
+   // });
   }
 
   /*
@@ -82,5 +83,4 @@ export class NotificationService {
       this.userService.setFcmToken(null).then(() => { this.updateToken(); });
     });
   }
-
 }

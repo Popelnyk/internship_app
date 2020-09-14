@@ -36,6 +36,14 @@ export class CordovaService {
     this.resume.next(true);
   }
 
+  public getTokenCordova() {
+    _window().FirebasePlugin.getToken(fcmToken => {
+      return fcmToken;
+    }, err => {
+      return err;
+    });
+  }
+
   /*
   public notify(): void {
     _window().navigator.notification.confirm(
