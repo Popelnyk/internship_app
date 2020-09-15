@@ -4,6 +4,13 @@ import {BehaviorSubject} from 'rxjs'
 import {UserService} from "./user.service";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {environment} from "../../environments/environment.prod";
+import {CordovaService} from "./cordova.service";
+
+
+function _window(): any {
+  return window;
+}
+
 
 @Injectable()
 export class NotificationService {
@@ -20,17 +27,17 @@ export class NotificationService {
   };
 
   constructor(private angularFireMessaging: AngularFireMessaging, private userService: UserService,
-              private http: HttpClient, private zone: NgZone) { }
+              private http: HttpClient, private cordova: CordovaService) { }
 
-  async enableNotifications() {
-    return new Promise((resolve, reject) => {
+  enableNotifications() {
+   // return new Promise((resolve, reject) => {
       this.angularFireMessaging.requestToken.subscribe((token) => {
         this.notificationReceiverToken = token;
-        resolve(token);
+        //resolve(token);
         this.updateToken();
         this.setupOnTokenRefresh();
       });
-    });
+   // });
   }
 
   /*
@@ -53,19 +60,6 @@ export class NotificationService {
   }
    */
 
-  sendLocalNotifications(title: string, description: string, token: string) {
-    let notificationBody = {
-      "notification": {
-        "title": `${title}`,
-        "body": `${description}`
-      },
-      "to": `${this.notificationReceiverToken}`
-    }
-
-    this.http.post('https://fcm.googleapis.com/fcm/send', JSON.stringify(notificationBody), this.httpOptionsWithToken)
-      .subscribe((data) => { }, error => console.log(error));
-  }
-
   private updateToken() {
     this.angularFireMessaging.getToken.subscribe((currentToken) => {
       console.log('update token in notificationsService: ', currentToken);
@@ -77,6 +71,37 @@ export class NotificationService {
     this.unsubscribeOnTokenRefresh = this.angularFireMessaging.onTokenRefresh(() => {
       this.userService.setFcmToken(null).then(() => { this.updateToken(); });
     });
+  }
+
+  // ***************************************
+  // Cordova notifications code starts here:
+
+  enableCordovaNotifications () {
+    _window().FirebasePlugin.getToken((currentToken) => {
+      this.notificationReceiverToken = currentToken;
+      this.cordova.notify(currentToken);
+      this.userService.setFcmToken(currentToken);
+    });
+  }
+
+  // End of cordova notifications code
+  // ****************************************
+
+  sendLocalNotifications(title: string, description: string, token: string) {
+    if (!token) {
+      return;
+    }
+
+    let notificationBody = {
+      "notification": {
+        "title": `${title}`,
+        "body": `${description}`
+      },
+      "to": `${this.notificationReceiverToken}`
+    }
+
+    this.http.post('https://fcm.googleapis.com/fcm/send', JSON.stringify(notificationBody), this.httpOptionsWithToken)
+      .subscribe((data) => { }, error => console.log(error));
   }
 
 }

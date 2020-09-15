@@ -6,6 +6,7 @@ import {EventsService} from "../../../services/events.service";
 import {firestoreConfig} from "../../../../firestoreConfig";
 import {UserService} from "../../../services/user.service";
 import {NotificationService} from "../../../services/notification.service";
+import {CordovaService} from "../../../services/cordova.service";
 
 @Component({
   selector: "app-list-events",
@@ -16,29 +17,36 @@ export class ListEventsComponent implements OnInit {
 
   events: Observable<any[]> | null;
   eventList: AngularFirestoreCollection | null;
-  defaultColor: string = "#4B9180";
-  outDatedColor: string = "#888888";
+
+  prop = null;
 
   time = new Observable<any>((observer: Observer<any>) => {
     setInterval(() => {
         observer.next(new Date().toString());
         this.checkEventsDates(this.authService.userToken);
-      }, 30000);
+      }, 20000);
   })
 
   constructor(
     public modalsService: ModalsService,
+    public authService: UserService,
     private db: AngularFirestore,
-    private authService: UserService,
-    private notificationsService: NotificationService
+    private notificationsService: NotificationService,
+    public cordova: CordovaService,
   ) {
     this.eventList = db.collection(firestoreConfig.users_endpoint).doc(this.authService.user.uid)
                        .collection(firestoreConfig.events_endpoint, ref => ref.orderBy('EventDate'));
   }
 
-  async ngOnInit() {
-    await this.notificationsService.enableNotifications();
-    this.events = this.eventList.valueChanges();
+  ngOnInit() {
+      if (this.cordova.onCordova) {
+        this.notificationsService.enableCordovaNotifications();
+      }
+      else {
+        this.notificationsService.enableNotifications();
+      }
+
+      this.events = this.eventList.valueChanges();
   }
 
   onCreateEvent() {
@@ -63,10 +71,11 @@ export class ListEventsComponent implements OnInit {
           this.notificationsService.sendLocalNotifications(`${item.EventTitle} event is coming to an end`,
             item.EventDescription, token);
         }
+        else {
+          break;
+        }
       }
     });
   }
 
 }
-
-//test

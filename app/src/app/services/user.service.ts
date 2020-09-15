@@ -90,7 +90,13 @@ export class UserService {
 
   SignOut() {
     return this.afAuth.signOut().then(() => {
-      this.router.navigate(['login']);
+      if (this.isUserLogged()) {
+        this.userToken = null;
+        return this.setFcmToken(null).then(() => this.router.navigate(['login']));
+      }
+      else {
+        return this.router.navigate(['login']);
+      }
     })
   }
 

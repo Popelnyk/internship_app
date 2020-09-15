@@ -5,9 +5,11 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/fromEvent';
 import 'rxjs/add/operator/map';
 
+
 function _window(): any {
   return window;
 }
+
 
 @Injectable()
 export class CordovaService {
@@ -36,15 +38,15 @@ export class CordovaService {
     this.resume.next(true);
   }
 
-  /*
-  public notify(): void {
+
+  public notify(data: string): void {
     _window().navigator.notification.confirm(
-      'You are the winner!',
-      ( ) => { },
+      `${data}`,
+      () => {
+      },
       'Game Over',
-      ['Restart','Exit']
+      ['Restart', 'Exit']
     );
   }
-   */
 
 }

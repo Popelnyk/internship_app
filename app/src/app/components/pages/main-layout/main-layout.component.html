@@ -1,5 +1,5 @@
-<div class="container" *ngIf="this.authService.isUserLogged()">
+<div class="container" *ngIf="this.authService.user">
   <button class="log-out" (click)="authService.SignOut()">sign out</button>
-  <!--<p class="welcome-msg" *ngIf="authService.user">Welcome, {{ getName() }}</p>-->
-  <app-list-events></app-list-events>
+  <p class="welcome-msg" *ngIf="!authService.isUserLogged()">Welcome, Anonymous. To have access to the app functionality, please sign in with google.</p>
+  <app-list-events *ngIf="this.authService.isUserLogged()"></app-list-events>
 </div>
