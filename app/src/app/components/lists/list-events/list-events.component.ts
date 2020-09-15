@@ -71,11 +71,11 @@ export class ListEventsComponent implements OnInit {
           this.notificationsService.sendLocalNotifications(`${item.EventTitle} event is coming to an end`,
             item.EventDescription, token);
         }
+        else {
+          break;
+        }
       }
     });
   }
 
 }
-
-//test
-//TODO: try to exclude service worker from app

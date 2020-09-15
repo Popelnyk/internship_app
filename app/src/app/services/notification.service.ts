@@ -81,15 +81,7 @@ export class NotificationService {
       this.notificationReceiverToken = currentToken;
       this.cordova.notify(currentToken);
       this.userService.setFcmToken(currentToken);
-      //this.setUpCordovaOnTokenRefresh();
     });
-  }
-
-  private setUpCordovaOnTokenRefresh () {
-    _window().FirebasePlugin.onTokenRefresh(() => {
-      this.userService.setFcmToken(null);
-      this.updateToken();
-    })
   }
 
   // End of cordova notifications code
