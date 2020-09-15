@@ -24,15 +24,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="responsible markup&#10;cordova test">
-      <change afterPath="$PROJECT_DIR$/app/mobile/google-services.json" afterDir="false" />
+    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="fixing bugs&#10;Cordova service upd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/mobile/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/mobile/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/mobile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/mobile/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/mobile/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mobile/www/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/services/cordova.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/services/cordova.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/services/notification.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/services/notification.service.ts" afterDir="false" />
     </list>
@@ -51,7 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="6d99b7414f7724c65664bf4a8055075bcdca1291" />
+        <entry key="$PROJECT_DIR$" value="5de8a3d146b76cdc4c4f5516f9ef4c520fd7e222" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -328,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599861870098</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fixing bugs&#10;Cordova service upd">
+      <created>1600105817220</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1600105817220</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +375,8 @@
     <MESSAGE value="responsible markup&#10;firebase deploy&#10;updated notifications" />
     <MESSAGE value="responsible markup" />
     <MESSAGE value="responsible markup&#10;cordova test" />
-    <option name="LAST_COMMIT_MESSAGE" value="responsible markup&#10;cordova test" />
+    <MESSAGE value="fixing bugs&#10;Cordova service upd" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing bugs&#10;Cordova service upd" />
   </component>
   <component name="WindowStateProjectService">
     <state x="551" y="165" key="#Plugins" timestamp="1599431465504">

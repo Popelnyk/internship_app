@@ -6,6 +6,12 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {environment} from "../../environments/environment.prod";
 import {CordovaService} from "./cordova.service";
 
+
+function _window(): any {
+  return window;
+}
+
+
 @Injectable()
 export class NotificationService {
 
@@ -21,7 +27,7 @@ export class NotificationService {
   };
 
   constructor(private angularFireMessaging: AngularFireMessaging, private userService: UserService,
-              private http: HttpClient) { }
+              private http: HttpClient, private cordova: CordovaService) { }
 
   enableNotifications() {
    // return new Promise((resolve, reject) => {
@@ -54,6 +60,41 @@ export class NotificationService {
   }
    */
 
+  private updateToken() {
+    this.angularFireMessaging.getToken.subscribe((currentToken) => {
+      console.log('update token in notificationsService: ', currentToken);
+      return this.userService.setFcmToken(currentToken);
+    });
+  }
+
+  private setupOnTokenRefresh(): void {
+    this.unsubscribeOnTokenRefresh = this.angularFireMessaging.onTokenRefresh(() => {
+      this.userService.setFcmToken(null).then(() => { this.updateToken(); });
+    });
+  }
+
+  // ***************************************
+  // Cordova notifications code starts here:
+
+  enableCordovaNotifications () {
+    _window().FirebasePlugin.getToken((currentToken) => {
+      this.notificationReceiverToken = currentToken;
+      this.cordova.notify(currentToken);
+      this.userService.setFcmToken(currentToken);
+      //this.setUpCordovaOnTokenRefresh();
+    });
+  }
+
+  private setUpCordovaOnTokenRefresh () {
+    _window().FirebasePlugin.onTokenRefresh(() => {
+      this.userService.setFcmToken(null);
+      this.updateToken();
+    })
+  }
+
+  // End of cordova notifications code
+  // ****************************************
+
   sendLocalNotifications(title: string, description: string, token: string) {
     if (!token) {
       return;
@@ -71,16 +112,4 @@ export class NotificationService {
       .subscribe((data) => { }, error => console.log(error));
   }
 
-  private updateToken() {
-    this.angularFireMessaging.getToken.subscribe((currentToken) => {
-      console.log('update token in notificationsService: ', currentToken);
-      return this.userService.setFcmToken(currentToken);
-    });
-  }
-
-  private setupOnTokenRefresh(): void {
-    this.unsubscribeOnTokenRefresh = this.angularFireMessaging.onTokenRefresh(() => {
-      this.userService.setFcmToken(null).then(() => { this.updateToken(); });
-    });
-  }
 }

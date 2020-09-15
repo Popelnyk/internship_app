@@ -1,14 +1,11 @@
 <div class="container">
   <div class="top">
-    <!--<h3>Title</h3>
-    <h3>{{authService.user.email}}</h3>
-    -->
-    <h3>{{time | async}}</h3>
-    <!--<h3>Description</h3>-->
-    <h3>{{cordova.cordova}}</h3>
+    <h3>Title</h3>
+    <h3>Description</h3>
     <h3>Date</h3>
     <button class="add" (click)="onCreateEvent()">+</button>
   </div>
+  <div style="visibility: hidden; width: 0; height: 0; padding: 0 0; margin: 0 0;">{{time | async}}</div>
   <div class="events-container">
     <div class="event" *ngFor="let item of events | async">
       <div class="title">

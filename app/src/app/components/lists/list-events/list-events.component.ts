@@ -18,7 +18,7 @@ export class ListEventsComponent implements OnInit {
   events: Observable<any[]> | null;
   eventList: AngularFirestoreCollection | null;
 
-  token = null;
+  prop = null;
 
   time = new Observable<any>((observer: Observer<any>) => {
     setInterval(() => {
@@ -39,7 +39,13 @@ export class ListEventsComponent implements OnInit {
   }
 
   ngOnInit() {
-      this.notificationsService.enableNotifications();
+      if (this.cordova.onCordova) {
+        this.notificationsService.enableCordovaNotifications();
+      }
+      else {
+        this.notificationsService.enableNotifications();
+      }
+
       this.events = this.eventList.valueChanges();
   }
 
