@@ -1,7 +1,9 @@
 .container {
+  display: flex;
+  justify-content: center;
+
   .auth-menu {
     width: 25%;
-    float: left;
     height: 100vh;
     justify-content: center;
     display: flex;
@@ -12,7 +14,7 @@
     position: absolute;
     font-style: normal;
     font-weight: 500;
-    color: #193359;;
+    color: #CEE0FB;
   }
 
   .auth-menu {
@@ -21,23 +23,22 @@
       font-weight: bold;
       font-size: 48px;
       line-height: 59px;
-      color: #193359;
+      color: #CEE0FB;;
 
       @media (max-width: 850px) {
         font-size: 40px;
       }
-      @media (max-width: 760px) {
-        color: #CEE0FB;
-      }
     }
 
     .log-in-google {
-      top: 300px;
       font-size: 18px;
       line-height: 22px;
 
       @media (max-width: 760px) {
         color: #CEE0FB;
+      }
+      @media (min-height: 560px) {
+        top: 270px;
       }
     }
 
@@ -45,34 +46,27 @@
       position: absolute;
       height: 55px;
       width: 160px;
-      top: 470px;
+      bottom: 50px;
       font-size: 18px;
     }
 
-      .google-logo {
-        position: absolute;
-        top: 350px;
-        width: 100px;
-        height: 100px;
+    .google-logo {
+      position: absolute;
+      width: 100px;
+      height: 100px;
 
-        &:hover {
-          cursor: pointer;
-        }
+      &:hover {
+        cursor: pointer;
       }
+
+      @media (min-height: 560px) {
+        top: 320px;
+      }
+    }
 
     @media (max-width: 760px) {
       float: none;
       width: 100%;
-    }
-  }
-
-  .background {
-    width: 75%;
-    float: left;
-    height:100vh;
-
-    @media (max-width: 760px) {
-      display: none;
     }
   }
 

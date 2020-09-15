@@ -24,14 +24,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="Cordova service upd.&#10;Notifications for mobile app work for now.">
+    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="background update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -347,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600193672510</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="background update">
+      <created>1600196288217</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1600196288217</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +369,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="event add modal upd styles" />
     <MESSAGE value="event-add-modal upd styles" />
     <MESSAGE value="getting form values in create-event-modal.component.ts&#10;added ngModel to obtain values from form in create-event-modal.component.html" />
     <MESSAGE value="getting form values in create-event-modal.component.ts&#10;created &lt;eventForm: FormGroup&gt; for validation" />
@@ -391,7 +393,8 @@
     <MESSAGE value="responsible markup&#10;cordova test" />
     <MESSAGE value="fixing bugs&#10;Cordova service upd" />
     <MESSAGE value="Cordova service upd.&#10;Notifications for mobile app work for now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cordova service upd.&#10;Notifications for mobile app work for now." />
+    <MESSAGE value="background update" />
+    <option name="LAST_COMMIT_MESSAGE" value="background update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="551" y="165" key="#Plugins" timestamp="1599431465504">
@@ -410,11 +413,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="689" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599079634060" />
-    <state x="551" y="255" key="Vcs.Push.Dialog.v2" timestamp="1600179094901">
+    <state x="551" y="255" key="Vcs.Push.Dialog.v2" timestamp="1600196333854">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="551" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599233689783" />
-    <state x="551" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600179094901" />
+    <state x="551" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600196333854" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599846686555">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
