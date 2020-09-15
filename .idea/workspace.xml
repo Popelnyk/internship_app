@@ -27,11 +27,12 @@
     <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="Cordova service upd.&#10;Notifications for mobile app work for now.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/services/notification.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/services/notification.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600179089519</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Cordova service upd.&#10;Notifications for mobile app work for now.">
+      <created>1600193672510</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1600193672510</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -3,17 +3,7 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-  background-image: url("https://images.wallpaperscraft.ru/image/list_vetka_temnyj_117447_1920x1080.jpg");
 
-  @media (max-width: 1200px) {
-    background-image: url("https://images.wallpaperscraft.ru/image/list_vetka_temnyj_117447_1440x2560.jpg");
-  }
-  @media (max-width: 780px) {
-    background-image: url("https://images.wallpaperscraft.ru/image/list_vetka_temnyj_117447_800x1200.jpg");
-  }
-  @media (max-width: 480px) {
-    background-image: url("https://images.wallpaperscraft.ru/image/list_vetka_temnyj_117447_720x1280.jpg");
-  }
   @media (min-width: 720px) {
     display: flex;
   }
