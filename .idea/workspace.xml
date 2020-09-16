@@ -26,8 +26,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="background update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mobile/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mobile/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -350,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600196288217</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="background update">
+      <created>1600212176396</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1600212176396</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,9 +426,9 @@
     </state>
     <state x="551" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599233689783" />
     <state x="551" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600196333854" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599846686555">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600253089831">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599846686555" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600253089831" />
   </component>
 </project>
