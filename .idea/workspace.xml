@@ -24,12 +24,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="background update">
+    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="New styles">
+      <change afterPath="$PROJECT_DIR$/app/src/app/icons/Group 6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/app/icons/Group 7.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mobile/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mobile/www/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/main-layout/main-layout.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +73,7 @@
       <recent name="C:\Users\lenovo\WebstormProjects\internship_app\app\mobile\platforms\android" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\WebstormProjects\internship_app\app\src\app\icons" />
       <recent name="C:\Users\lenovo\WebstormProjects\internship_app\app\mobile" />
       <recent name="C:\Users\lenovo\WebstormProjects\internship_app\app\mobile\platforms\android\app" />
     </key>
@@ -358,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600212176396</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="New styles">
+      <created>1600271993943</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1600271993943</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +385,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="event-add-modal upd styles" />
     <MESSAGE value="getting form values in create-event-modal.component.ts&#10;added ngModel to obtain values from form in create-event-modal.component.html" />
     <MESSAGE value="getting form values in create-event-modal.component.ts&#10;created &lt;eventForm: FormGroup&gt; for validation" />
     <MESSAGE value="getting form values in create-event-modal.component.ts&#10;created &lt;eventForm: FormGroup&gt; for validation &#10;date validation added" />
@@ -402,7 +409,8 @@
     <MESSAGE value="fixing bugs&#10;Cordova service upd" />
     <MESSAGE value="Cordova service upd.&#10;Notifications for mobile app work for now." />
     <MESSAGE value="background update" />
-    <option name="LAST_COMMIT_MESSAGE" value="background update" />
+    <MESSAGE value="New styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="New styles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="551" y="165" key="#Plugins" timestamp="1599431465504">
@@ -421,11 +429,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="689" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599079634060" />
-    <state x="551" y="255" key="Vcs.Push.Dialog.v2" timestamp="1600196333854">
+    <state x="551" y="255" key="Vcs.Push.Dialog.v2" timestamp="1600272007441">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="551" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599233689783" />
-    <state x="551" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600196333854" />
+    <state x="551" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600272007441" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600253089831">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

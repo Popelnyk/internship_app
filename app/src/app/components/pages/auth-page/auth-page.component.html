@@ -1,14 +1,14 @@
 <div class="container">
   <div class="auth-menu">
-    <svg width="195" height="196" viewBox="0 0 195 196" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M45.9123 171.068C105.013 115.662 105.656 -41.5783 142.657 45.1823C72.6156 146.208 185.287 76.6382 179.596 102.73C173.905 128.822 148.14 145.36 122.048 139.669C95.9564 133.978 -57.5651 51.0018 45.9123 171.068Z" fill="url(#paint0_linear)"/>
-      <defs>
-        <linearGradient id="paint0_linear" x1="79.7372" y1="178.446" x2="114.822" y2="17.5916" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#2EB79E"/>
-          <stop offset="1" stop-color="#017458"/>
-        </linearGradient>
-      </defs>
-    </svg>
+    <div class="logo">
+      <svg width="163" height="110" viewBox="0 0 163 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M41.4137 104.027C77.1604 25.624 -60.4314 112.137 77.1607 31.4812C176.308 45.9 102.198 31.0591 136.514 8.05033C212.585 -42.9549 96.7312 168.287 113.07 87.1624C124.804 28.9001 27.8537 133.768 41.4137 104.027Z" fill="#31365E"/>
+        <path d="M125.5 18.2438C118.991 27.2888 136.908 35.4638 124.762 35.137C112.616 34.8102 68.8493 31.1318 84.4915 26.0508C84.4915 26.0508 86.4907 26.1045 113.331 13.822C124.379 8.76613 130 11.1129 125.5 18.2438Z" fill="#A7AFDA"/>
+        <rect x="36.6667" y="87" width="2.20603" height="25.4701" rx="1.10302" transform="rotate(58.2848 36.6667 87)" fill="#A7AFDA"/>
+        <rect x="107.969" y="79" width="2.20603" height="33.7856" rx="1.10302" transform="rotate(55.8784 107.969 79)" fill="#A7AFDA"/>
+        <rect x="34.5188" y="75" width="2.20603" height="40.5783" rx="1.10302" transform="rotate(58.2848 34.5188 75)" fill="#A7AFDA"/>
+      </svg>
+    </div>
     <p class="site-name">Auth&Fly</p>
     <p class="log-in-google">log in with google</p>
     <img class="google-logo" [src]="googleLogoUrl" alt="google logo"  (click)="authService.SignInWithGoogle()">

@@ -18,6 +18,11 @@
   }
 
   .auth-menu {
+    .logo {
+      position: absolute;
+      top: 50px;
+    }
+
     .site-name {
       top: 160px;
       font-weight: bold;
