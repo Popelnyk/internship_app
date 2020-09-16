@@ -24,12 +24,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="New styles">
+    <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="upd styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/modals/create-event-modal/create-event-modal.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/modals/create-event-modal/create-event-modal.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/modals/delete-event-modal/delete-event-modal.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/modals/delete-event-modal/delete-event-modal.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -373,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600274335151</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="upd styles">
+      <created>1600285009698</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1600285009699</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,7 +397,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="getting form values in create-event-modal.component.ts&#10;added ngModel to obtain values from form in create-event-modal.component.html" />
     <MESSAGE value="getting form values in create-event-modal.component.ts&#10;created &lt;eventForm: FormGroup&gt; for validation" />
     <MESSAGE value="getting form values in create-event-modal.component.ts&#10;created &lt;eventForm: FormGroup&gt; for validation &#10;date validation added" />
     <MESSAGE value="creating firestore service + events service for adding events to users list" />
@@ -417,7 +421,8 @@
     <MESSAGE value="Cordova service upd.&#10;Notifications for mobile app work for now." />
     <MESSAGE value="background update" />
     <MESSAGE value="New styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="New styles" />
+    <MESSAGE value="upd styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd styles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="551" y="165" key="#Plugins" timestamp="1599431465504">
