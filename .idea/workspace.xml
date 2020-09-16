@@ -25,11 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="New styles">
-      <change afterPath="$PROJECT_DIR$/app/src/app/icons/Group 6.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/app/icons/Group 7.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/modals/create-event-modal/create-event-modal.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/modals/create-event-modal/create-event-modal.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/modals/delete-event-modal/delete-event-modal.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/modals/delete-event-modal/delete-event-modal.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/pages/auth-page/auth-page.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -366,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600271993943</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="New styles">
+      <created>1600274335151</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1600274335151</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
