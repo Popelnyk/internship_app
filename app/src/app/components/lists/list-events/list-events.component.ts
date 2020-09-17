@@ -24,7 +24,7 @@ export class ListEventsComponent implements OnInit {
     setInterval(() => {
         observer.next(new Date().toString());
         this.checkEventsDates(this.authService.userToken);
-      }, 20000);
+      }, 60000);
   })
 
   constructor(
@@ -61,7 +61,7 @@ export class ListEventsComponent implements OnInit {
     let date = new Date().getTime();
     let deadline = new Date(eventDateStr).getTime();
     let difference = (deadline - date) / (1000 * 60);
-    return difference < 30;
+    return difference < 60;
   }
 
   checkEventsDates(token: string) {

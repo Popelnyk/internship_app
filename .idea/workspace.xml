@@ -27,7 +27,8 @@
     <list default="true" id="bdbc2684-5502-4701-a8e3-bed1b63dc712" name="Default Changelist" comment="upd styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/modals/delete-event-modal/delete-event-modal.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/modals/delete-event-modal/delete-event-modal.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/lists/list-events/list-events.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -378,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600285009699</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="upd styles">
+      <created>1600288874703</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1600288874703</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
